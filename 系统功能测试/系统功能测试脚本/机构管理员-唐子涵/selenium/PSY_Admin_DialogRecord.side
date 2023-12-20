@@ -1,0 +1,3572 @@
+{
+  "id": "668796dc-a2d5-4697-bd97-2393af898efe",
+  "version": "2.0",
+  "name": "PSY_Admin_HelpRecord",
+  "url": "https://sei-test.021hqit.com/group-6/#/login",
+  "tests": [{
+    "id": "35a60172-79c8-4e8d-b688-80410d08931b",
+    "name": "PSY_Admin_HelpRecord_Check_TC01",
+    "commands": [{
+      "id": "d2c16c91-2b16-4863-997d-e919b3387573",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48b848c9-4a56-4945-a5f8-7704d8222a24",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d9e0663-c160-443c-902b-a460e3caf172",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0790d937-7512-442e-946e-e300fba473d1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "cc609a91-9a4b-4392-9b5e-21021a4739d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2384ac9-57a3-41e0-848a-a16f3c79d313",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "de425efd-78a5-40bd-8c59-01766bddd831",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8cc79f51-a65d-4155-8552-021d119676fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cf45ab6-013d-465a-a3e2-2e1c64ed8803",
+      "comment": "",
+      "command": "click",
+      "target": "css=.total > span",
+      "targets": [
+        ["css=.total > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[3]/div/span/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5cb70dd1-7c8e-40f9-9b4d-6fac90898029",
+    "name": "PSY_Admin_HelpRecord_Check_Details_TC02",
+    "commands": [{
+      "id": "ba978c64-18ea-4945-914c-13055af16d3e",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a0badf2-6574-47dc-a34e-cc1f3ee969a2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99e71643-43f1-4c4b-95b9-470f886afc19",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c239dfb9-1c79-4a1c-b0e7-7c871493ca28",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "0c819670-d354-4ab1-9594-67c0f85edd04",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "284c6cb1-e050-416a-bb07-bc7281a1d9fc",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "059384af-baf1-4d61-a797-9d6722eb6613",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7f7923dc-0ae6-4a1c-9b0a-ba9614190f9f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1f1d927-3567-4061-97ba-59853a376686",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-table__row:nth-child(5) .el-button:nth-child(1) > span",
+      "targets": [
+        ["css=.el-table__row:nth-child(5) .el-button:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]/table/tbody/tr[5]/td[6]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[6]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8077246e-4076-4b77-ba7c-3866ad312f4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.focusing > .message-content",
+      "targets": [
+        ["css=.focusing > .message-content", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[3]/div/div/div[2]/div/div[2]/div/div[2]/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div[2]/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a098eaa6-6619-46ac-bc71-0e9c8764df80",
+      "comment": "",
+      "command": "click",
+      "target": "css=.title_dark:nth-child(1)",
+      "targets": [
+        ["css=.title_dark:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[3]/div/div/div[2]/div/div[11]/div/div[2]/div/div[2]/div/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[11]/div/div[2]/div/div[2]/div/div/div/div/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "174cdfe6-a191-4801-bf33-91e512a50d67",
+      "comment": "",
+      "command": "click",
+      "target": "css=.content:nth-child(1) .no-more",
+      "targets": [
+        ["css=.content:nth-child(1) .no-more", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e1decc55-f34d-44e4-8fd4-e501dc2385fe",
+    "name": "PSY_Admin_HelpRecord_Check_Details_Back_TC04",
+    "commands": [{
+      "id": "892d1289-6432-4741-8a55-b945b0b71f1e",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2dd07087-ab90-4608-a38f-af4a1e373422",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9cd984f-c462-43a0-8c1f-103ec313f087",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2e1b408-b6b4-4b31-857d-8315eece74b2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "f40c9e60-16df-4ee9-898d-2c090898a55f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "313448eb-cb2c-4895-938b-7d87a622437e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "90c322ad-c6b2-4133-a206-eb2da1a0a5f5",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7a9494d4-20b1-40e7-b49d-a5ec7f6e929a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25ab6c53-3d21-4598-ab47-870ec118302c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-table__row:nth-child(1) .el-button:nth-child(1) > span",
+      "targets": [
+        ["css=.el-table__row:nth-child(1) .el-button:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]/table/tbody/tr/td[6]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//td[6]/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'查看详情')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "51ff4c20-695d-4074-9f0c-5790e9a28016",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btns > div:nth-child(2)",
+      "targets": [
+        ["css=.btns > div:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div[3]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "010e1212-81d2-4e4b-9318-893b1d40a7ce",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "求助记录列表",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9ddc13b4-6203-4441-a768-14b8013cad85",
+    "name": "PSY_Admin_HelpRecord_Check_Details_Export_TC03",
+    "commands": [{
+      "id": "a837b373-0177-4a95-957c-9b1cdc4ba02f",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "362ddc94-8ac3-484c-ac9a-2b9515f10772",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68904985-a32f-4e8b-bba2-67cc88a652b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5be9fe9-877a-40b3-b2eb-8eb99278b0b3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "38ea2fa9-e319-48c5-9fca-b5b093a39e09",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e20f0dd9-abff-4c7d-98a9-13e228ed181e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "18c5fe27-fe98-4c7c-bb13-5b13451e21e5",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "08723f5f-05b1-4ecf-a55a-5e287d9d1a34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a4406d9-f4f7-44aa-9e25-6e37bfcb15fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-table__row:nth-child(5) .el-button:nth-child(1) > span",
+      "targets": [
+        ["css=.el-table__row:nth-child(5) .el-button:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]/table/tbody/tr[5]/td[6]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[6]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4788cc8-0a7a-46ac-b541-93a5ffd0af8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btns > div:nth-child(1) > img",
+      "targets": [
+        ["css=.btns > div:nth-child(1) > img", "css:finder"],
+        ["xpath=//img[contains(@src,'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABOCAYAAACzOEF7AAAABHNCSVQICAgIfAhkiAAAB7dJREFUeF7tXc1SIzcQlmZMruEN1ntMpZafBwiYcwowt9yAqtyXfYJ4nwA45wB7yhHbWznbkAfAkE3luN4nWPYaZqR0yzNmRp4fSaMxM9T4RO1I3a1PLam7pe6lZAm/j3/93eE+P+SEdymlq8iScz6Bv8c+Wzk/2PlhugQxSmVBy6R+Nfq37dD/rgCwjRw+Zz7z3x/sbD6UKU+ZtEsD8s/RPxse9UahBuYNAjWUcbZTVzBLAfJqdLvqUOdzFEQA6huh5BIAFVpHidDS/RjAnFzuddaO80Cv4vdSgBxc318C4cNwwJyQD4z5J7K2odb61OsTSl+FbalDd3Z/ejOuIlhZMlkHEvdF13n8HGE62Nte66YJEWwBY9De74M2me2rCrAxkLh8XdddlwdGOe3A6dwL/x1O5dd5p/Lg+u4MlvrbOS1KOjJd13e//bzz4+RFARmcxre5Bwknd7Dn5Z3YRJhHjI9yQeKkD/QOcts9QwMjjRze3J0QTk8V5L2GZb2gXXI/od2O+1WBHgF6RjKr0C7SxkgoWIo9WIq/5TGmlBzsbq3189rh9+H1PbaLn+IJHWsF5PDmfp9w2Kc4SVyWnPI2ANkOx4knrTxmz/MmujYhbhmtljenizQ5Zxuck1PgN2PByThtYkCuPmPfDfL2ZJWJ1W0T08iZOeKfgsy5yzHKqEwtGY4+/Uoc9rvWwMAe9bn/TncitXhIjedAghYewWxfmBArE8jB6NMv1GF/6Mq1bE9JACk00fFvo8KiJ4JBBTBlkkyODiy17bB9mUDKJzrI8z4B1FU0u2AlxcyxZYIpgByM79Cdm+9NIOw5Y6yXtjTkw2aZQGbxEs4AfQRP6QlQBH5/e72nq9G67am8pFUYLxNIWb68SROmFHXHIZiglQ8QDAGnoNzIEo2ZHZx/2eusx07NpJlZMKBL2twXwnCG8umYYbqaGLan0WWNSxqWwYkKseH4bhoNNqj0KdpGZbWEPKLy6fQzlRE1EoIzs58OQ2W3zlQyuR+4m2DSdFSXKIxrDCTEgYjRp/3ttSNboiTRMQYSiSWFwcoQNi0Ml8UrCiS0U3JVi8heCMiQMQLKWkzcxdj+eV5rauKp1BJI2+DZoNcAaQNFoNEA2QBpCQFLZBqNbIC0hIAlMpXVyHms0tJALZCZZsUcKwukJJgFHCyQoPzd3tb6WRKlygIpX/pbgKEwiazHBJUFcnaP7RzB/UkpHowuqg6lk6yLtcoCqTvQ527fAGlpBhogGyAtIWCJTKORDZCWELBEprIaGVx14nuftqWxFiKDd+6722+S7rgF3coCqfrIqRA6up0pOd7bWruslWdTNyBjnliGK6k7d2ntle9sxB2z8wjP+aqxtAm8PEvzs3GwIiHAccEPhwcCGa9Glg6kLYYvlY6yRr5UAGyNqwHSEpINkA2QlhCwRKbRyGUDOTMnnEOHOM8W2PVY64Pu8xVx1+T6r+BF7zyxAB7tT3x/5U6XVhbmyhpZhasGeDQ63e+sv85TotCdjeaHJ/VBepB8eukxD3LGiz1EVQayKpdf2U+fxWvdC3itm5r7mALoAwB6luW7502eMpDBg/3EG7s8Jta+Q5pymm/98ea+yxi/yErrCxIMwuTRBbHw8X6Lt45Nch6VgbQGRgmE0lJb8F2lQ0nf8/1xdOmKpe8+YkLWEYgzz85A0fDNOYC5owtm7YFETYSbzStpfgaQlQv54fm1MoJ6G2exTAiDB/y1BjIxS9cg0hMGOKLJ+piqB5m4C6mBhaM/JazIwiSH4/tRLN0vIz6pwmwhVKgxKbXVyIRkgMKVB2Y5Os4kmq2BeyZkuY2pS8+zSkTUFsio9uBpDElJ7aK2IGptVk5m1qleSyDlRHnb6R+5zkfCFlIrIIM6GtuEgcFNhekifi5zN3XNlbw9M8wdh+h6F82kSPGSWVcJzFoAiQC2nNZbWL4nssGNyxrcxlL9/yDOgFUTngqYSBNYeSCDcjZYFqydokWFD5k87Qy/LyTAgicEk7gpFNQ0hU6VeZF2aWXBAldvAnvjNKkwUxGeeX3l0jrhG83KAhmUBcPaak91NSAfkTqkp1pwJA8Uk++BXFO54FNlgZRzwk3yEU2AUukjayVGpBDIMXSeOe6abpEKU9M2kP78dX6waGbGmvJU7Sc7A7i8qTzzVSjyJgciqiCTDHL0bBFAykXhTMNIqrOp0i46ucswb1RkygQSCkXNioMkVZaC8grEIVgdqtQqo3B38kUOd0nBg9JzrXWBlJVPaGRIJNct0uWm016Ksiz7SZ6OqNhW3nrQs4pVolooP6jLwbS9VPRDWtpzo9eUvO1+MaULZF8oMieMYMeHanyiQnPq/YZN4eSiJLIHoVKD0qY8WbQWzpSgXkZmtb6kom+2BXY850EOOJQd3SkyBjDLsG7m3EkIJ9mo7GERQVT7LuzZBaPfqnzT2gWFmWJXvdHwXWWBDO5jsOj7fHuB6EuvyN2zKZhogDOf4VVve05DchIqCyQKnBStxtcRIvRP6dQUGNV+sHevAj88K54AhM5o28KVbSe6JVUayDQwVYEopZ3QxJWubPtWHkhht4n/64FdLruEWHQigoL0Z2mV/2oBZDgg8SyFky7FkrVSrciytA/4QA040vd9v591ufY/pJWgRRkVIRcAAAAASUVORK5CYII=')]", "xpath:img"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div[3]/div/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "359fff94-810e-4ceb-98ec-ea902a63f93d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-button--default:nth-child(2) > span",
+      "targets": [
+        ["css=.el-button--default:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[3]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'确认')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7c01e496-24bc-4c6e-ba81-302e3beb8a67",
+    "name": "PSY_Admin_HelpRecord_ConsultantName_True_TC01",
+    "commands": [{
+      "id": "b78c45cd-6ea1-49ed-96ff-f9b8a23a8b4d",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e17e59f2-59c2-4944-9b9f-8aa307e747a4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1058x811",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c13838b0-ed20-421e-8292-c61c740fff7b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20fb8fa8-25b8-446a-8378-7c7bf48a7713",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "9360ada9-b39c-4312-b95d-9b720d8c3b05",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca358a32-7bb0-4271-a98c-41dfef82bf4e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "c466ef53-664e-40cc-9fd8-298c0f937fbc",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9fc3ea54-0520-453b-abc2-237154ee9aca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0a36da3-b062-4b58-a140-2c2b90a309cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef409d04-df44-4dbf-9064-4468dbd7ec7f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "张"
+    }, {
+      "id": "bfdd07e5-0e86-4f26-9606-5730baee0627",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6658d64f-358b-444c-81de-8e0422f28e6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-table_1_column_3 > .cell > div",
+      "targets": [
+        ["css=.el-table_1_column_3 > .cell > div", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]/table/tbody/tr/td[3]/div/div", "xpath:idRelative"],
+        ["xpath=//td[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a223d326-74a8-4062-8e28-aaf1b76f2b9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-table_1_column_2 > .cell > div",
+      "targets": [
+        ["css=.el-table_1_column_2 > .cell > div", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]/table/tbody/tr/td[2]/div/div", "xpath:idRelative"],
+        ["xpath=//td[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cab19c9d-ba52-4c7f-a21e-c132bdb9e88e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.total > span",
+      "targets": [
+        ["css=.total > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[3]/div/span/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3afb6c2c-a6ee-46f5-94ba-aa4fc2ac6404",
+    "name": "PSY_Admin_HelpRecord_ConsultantName_True_TC02",
+    "commands": [{
+      "id": "7e98c41a-4def-4095-93ca-7d449b26a92a",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff16d740-d6f0-4d74-a7d0-79a6ba08c009",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1058x811",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec68e313-f8c7-44fa-b803-d50c364310d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "714e597b-e9a4-4e7d-a86e-03137272a943",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "45bfb3e8-a6d3-4390-92d2-b4df4593f87e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71d9f99e-b3bc-4ba5-b0e0-8b3650f2e6cd",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "0f9d922a-254a-4df2-9d9e-0c04cbcd88dd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8746623b-7930-4230-830c-00149d948148",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9e848bf-ce6a-4b13-8770-dd85f8d51428",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28f77b4f-f333-4238-9b98-db8524b33996",
+      "comment": "",
+      "command": "type",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "咨询师张哥"
+    }, {
+      "id": "dfa5243f-11bd-47be-a355-ee05c1756f7a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d1db1692-ada1-4c5d-8bcf-168663abe996",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-table_1_column_3 > .cell > div",
+      "targets": [
+        ["css=.el-table_1_column_3 > .cell > div", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]/table/tbody/tr/td[3]/div/div", "xpath:idRelative"],
+        ["xpath=//td[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6d0760d-7ff0-4c40-91dd-5d3833d909ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-table_1_column_2 > .cell > div",
+      "targets": [
+        ["css=.el-table_1_column_2 > .cell > div", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]/table/tbody/tr/td[2]/div/div", "xpath:idRelative"],
+        ["xpath=//td[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85cd1a65-a67e-4e5b-9c4a-68ed22fad133",
+      "comment": "",
+      "command": "click",
+      "target": "css=.total > span",
+      "targets": [
+        ["css=.total > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[3]/div/span/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "49e07b35-556d-46c1-82a3-1c27824993a8",
+    "name": "PSY_Admin_HelpRecord_ConsultantName_True_TC03",
+    "commands": [{
+      "id": "bcf81f73-9366-4a0a-adc9-c751a6dd8b81",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f439c937-636a-446d-9172-cca79fe865ec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1058x811",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b152a35-787e-42d9-a9e5-0dc2a30ccf56",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3824d54b-470e-4c76-92c8-2ee150d457ef",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "191b80b5-dafa-4799-89fe-766c62cd54aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6613edfb-b58a-4e9d-8532-63e6ef9eb313",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "e60215ea-2175-4f56-b4f1-7fb2efe2e619",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "1b23308b-16aa-460e-9a1f-2c02d0fd7d0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d226f74-46e6-4353-b93c-31c6e9568398",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d785380a-7b54-4401-9b8d-7bbae731bf42",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "30f64561-3736-4055-b319-3358026480a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.total > span",
+      "targets": [
+        ["css=.total > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[3]/div/span/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4f216e9-9baf-482d-a080-623bb7874338",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.total > span",
+      "targets": [],
+      "value": "5"
+    }, {
+      "id": "f9acc1a2-984d-4836-94b5-d1267a72e68d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "33e3cba4-a7ad-4bf1-8122-2a29395fb674",
+    "name": "PSY_Admin_HelpRecord_ConsultantName_True_TC04",
+    "commands": [{
+      "id": "ad65872f-7be1-4dee-a313-07bf461ba19f",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f518bf50-d099-4dfb-95b6-931b33463b56",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6273efb-2aaa-487d-82fb-562934634675",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f04df1a-9774-4808-92e2-42f95bebce77",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "52cb8093-f084-4d82-9cad-dcdbe3ffbe6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2a2d18d-0293-412d-b64b-a3665ae765f4",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "b20bd869-8d84-4db5-9c9a-8b676b7483a4",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3ee7b826-6fa2-4f8e-9fa0-68293ac81058",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b8ed705-ce1c-476f-b278-8bfbfe6b524e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36db66e5-932c-425f-b730-930c22676a7c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "咨询师 哥"
+    }, {
+      "id": "e4f6e72f-73a6-4d24-8425-422e4f7cb3cd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "05f26328-cf13-4f93-adf0-b27ab45641d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-table__empty-text",
+      "targets": [
+        ["css=.el-table__empty-text", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'暂无数据')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e65f9ae9-d074-4d57-9f45-cfab36ac6502",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.el-table__empty-text",
+      "targets": [],
+      "value": "暂无数据"
+    }]
+  }, {
+    "id": "355785d3-52ba-4a58-9fec-6e120c9ba0a2",
+    "name": "PSY_Admin_HelpRecord_ConsultantName_False_TC01",
+    "commands": [{
+      "id": "0e5fb952-ccb9-4ea3-b4d9-f36d466f64fa",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf7a88e8-0549-461b-90b0-be918d46edc1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb808796-42a4-4a84-a497-137bc10a8885",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3c01c49-b725-457c-9999-5d2ac8f86356",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "42a73b3d-ab0a-4364-b19c-5fc9c74cde4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "841f13a3-d026-4fea-852c-179a779db0d3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "3cc65d00-13b9-44fc-9ebc-a7d38445582f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "5a0230bb-d170-475e-8705-4d0f92daefc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9522d72b-3efe-4c2a-950c-97a3ac01dc31",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a87bdf76-6f41-4484-b1e6-11b83943cdad",
+      "comment": "",
+      "command": "type",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "哈哈"
+    }, {
+      "id": "c4c78782-fbbd-4dad-81e2-0dbc88a86672",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "cd116515-137b-408c-86f0-86309010e8b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-table__empty-text",
+      "targets": [
+        ["css=.el-table__empty-text", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'暂无数据')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d30aa7db-ba9d-4e50-b5f5-bc51f49b2e4a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.el-table__empty-text",
+      "targets": [],
+      "value": "暂无数据"
+    }]
+  }, {
+    "id": "677b9c68-e833-4597-95ed-3483044a039f",
+    "name": "PSY_Admin_HelpRecord_ConsultantName_False_TC02",
+    "commands": [{
+      "id": "eae88a7f-2969-4853-8aef-da10554526f6",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "806a504d-4061-44d9-99ba-37947cb8b8e4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8442398-b292-4f47-9a56-1c62526f9308",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4f17303-de57-4b57-a674-b4ee8bbf11f6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "b68d7e3b-6859-4936-b313-0ca7b8b77c26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22f408a8-8d2a-460f-b746-f687e4a458cb",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "88aa91e8-53a4-4fe7-971b-9a3513856e6e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "5c49374f-0266-43df-a403-9fa160907647",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d2053aa-c7af-46f0-97f5-ca0fe2194298",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f38aa5d1-9720-4647-bfe3-7d836c0d719c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": " 哥 "
+    }, {
+      "id": "a423620f-9594-4cc4-8f3e-1f54d79527d7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "fdf9bba7-5f04-424c-807b-589f8dbcb068",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-table__empty-text",
+      "targets": [
+        ["css=.el-table__empty-text", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'暂无数据')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c51133ed-0015-476f-abbe-8a1636c50da7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.el-table__empty-text",
+      "targets": [],
+      "value": "暂无数据"
+    }]
+  }, {
+    "id": "e35e404d-5b03-4c52-92f6-8504c06669a8",
+    "name": "PSY_Admin_HelpRecord_Date_Days_TC01",
+    "commands": [{
+      "id": "64d8797f-9010-4248-a012-de5ffb41bb08",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fed9063-606b-4979-a5a8-8146b2298c66",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fee21917-1826-469a-b329-3f0d4f5121db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4abaac1-2b65-440b-9ed5-07f43fecd4bb",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "6d3cd4aa-2415-4298-ab0a-ec78a0699551",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5cbd09e-f6e1-44b9-8aab-0cd3448bd0f0",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "600d3609-b0bb-4e67-a103-4b34a27b2b2d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "14bf3426-6d86-44b1-bf6a-a08f96352ee4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7eacd98-d7ec-48ad-919c-df408729970f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-range-input:nth-child(2)",
+      "targets": [
+        ["css=.el-range-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f826a1ac-903c-44b6-a35e-b2f521ee647e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//span/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf67000b-48f7-4889-b662-83206cd8bf9a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//span/div/input", "xpath:position"]
+      ],
+      "value": "2021-12-15"
+    }, {
+      "id": "90e2eace-4935-4898-90f1-8858b02c0324",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1)",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7f5a0ad-4bff-4690-8421-097cc86e3c69",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//span[2]/div/input", "xpath:position"]
+      ],
+      "value": "00:00:00"
+    }, {
+      "id": "48b57e33-13e7-4378-99b2-5d592b0ddd62",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//span[3]/span/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4772620-9c3e-41a9-aa44-83814cde055d",
+      "comment": "",
+      "command": "type",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//span[3]/span/div/input", "xpath:position"]
+      ],
+      "value": "2021-12-18"
+    }, {
+      "id": "3aac0e28-4ce4-438a-817a-46b699ab4472",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//span[3]/span[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b3e6faa-79e1-4718-9a4f-97a182a032b5",
+      "comment": "",
+      "command": "type",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//span[3]/span[2]/div/input", "xpath:position"]
+      ],
+      "value": "00:00:00"
+    }, {
+      "id": "07109a77-8bbf-4740-b546-191478ce06a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-plain",
+      "targets": [
+        ["css=.is-plain", "css:finder"],
+        ["xpath=(//button[@type='button'])[25]", "xpath:attributes"],
+        ["xpath=//body/div[2]/div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90876c06-04b4-4c03-8adc-3c7c457a9e8e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.total > span",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "d6cada05-9142-4fef-aae6-fbbe549ca192",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "71e1afa4-e9bf-4fc6-b632-9bb8ac0ff842",
+    "name": "PSY_Admin_HelpRecord_Date_Days_TC02",
+    "commands": [{
+      "id": "cd6c082c-e708-4a48-b6ed-8294ef8c8221",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca2709ca-044f-4f39-8a4e-d5b81308524e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5752fd8e-781c-4d38-a856-4a5f0de6af64",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c66638d-a148-42bd-82b1-b5b27d502e66",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "2db86d66-fea2-4eba-a8e8-b2200c8e9c98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7718b73e-fa10-404e-94c8-bb2f863dacc3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "9a427cff-f024-433c-a081-47dde6e38c8c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "bac6e48c-1a4e-46be-8857-1e97b3b7ecc3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8320ccc2-afd5-4ea6-a8f8-a78078a0d351",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-range-input:nth-child(2)",
+      "targets": [
+        ["css=.el-range-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2851da56-8b49-4a9c-8289-705ff813381c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//span/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1c491f9-9f22-4e80-b5a2-c10c38b0186a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//span/div/input", "xpath:position"]
+      ],
+      "value": "2021-12-18"
+    }, {
+      "id": "2b33fffb-217b-4e21-baab-00563a06e90d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1)",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6581b5d0-7098-4126-8c09-bd186c7094f1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//span[2]/div/input", "xpath:position"]
+      ],
+      "value": "00:00:00"
+    }, {
+      "id": "60874806-ac32-4dfd-9f4f-43adf95e601f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//span[3]/span/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb4430e9-1a9a-495a-873f-258362e4328f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//span[3]/span/div/input", "xpath:position"]
+      ],
+      "value": "2021-12-18"
+    }, {
+      "id": "6c3ce59e-4172-480c-b210-1f2a7fda019c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//span[3]/span[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42763b0b-ae29-4b26-90c7-7a46544ff7fe",
+      "comment": "",
+      "command": "type",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//span[3]/span[2]/div/input", "xpath:position"]
+      ],
+      "value": "23:30:00"
+    }, {
+      "id": "999b3ebb-b88b-44cd-9e44-36eefdb9be65",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-plain",
+      "targets": [
+        ["css=.is-plain", "css:finder"],
+        ["xpath=(//button[@type='button'])[25]", "xpath:attributes"],
+        ["xpath=//body/div[2]/div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd587a50-60cc-45d8-8081-e6619ef88960",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.total > span",
+      "targets": [],
+      "value": "4"
+    }, {
+      "id": "ec94827a-8d85-419d-bb83-c6a88d9e9542",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2d39898b-37f0-499e-bb68-35bef657c034",
+    "name": "PSY_Admin_HelpRecord_ConsultantName_Date_PartlyxDays_TC01",
+    "commands": [{
+      "id": "8f4c3af1-af46-460c-83fe-490fb6e72000",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "699af1c2-1d93-4b3b-ab90-c5f9e6aaf7d6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e7b915c-0f84-485a-9292-429753e2799e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "730a982a-4da8-4fc7-979b-c0c57967e947",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "abe75d70-d5a3-483a-9589-881bd7f9d67d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d94d7da-62c5-48ec-84eb-48d2ed9690c5",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "0577f058-3999-46e6-9d47-f4ab3ef3d69b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b298a90b-754f-4710-b9c3-a6436d11faaa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "747caf7e-6efc-4689-98d0-837e054a431b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b70f74f6-efb9-4a3f-9b70-867e141531fd",
+      "comment": "",
+      "command": "type",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "哥"
+    }, {
+      "id": "710e1171-6425-44fb-9aa0-6fd3e41081df",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "79b882be-92b0-4cc8-88ae-202e013f0992",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-range-input:nth-child(2)",
+      "targets": [
+        ["css=.el-range-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ff4cb94-23d6-449b-9148-11d9c10bd71b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//span/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d19cb94b-e18f-493e-a792-43a5f9cbe54e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//span/div/input", "xpath:position"]
+      ],
+      "value": "2021-12-15"
+    }, {
+      "id": "11b061e0-675c-449c-a638-a44139503867",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1)",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26f8feb1-7a36-4984-a930-179618e9c41b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//span[2]/div/input", "xpath:position"]
+      ],
+      "value": "00:00:00"
+    }, {
+      "id": "3574ba9b-e1b2-45f2-859d-28b6f6d92a61",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//span[3]/span/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "606a024c-16a0-496f-9616-581e99021e8c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//span[3]/span/div/input", "xpath:position"]
+      ],
+      "value": "2021-12-18"
+    }, {
+      "id": "7782d2c1-b985-4f5e-bbf6-a12bc20fc568",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//span[3]/span[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2514e21-e6f9-410e-974c-fe16648dab10",
+      "comment": "",
+      "command": "type",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//span[3]/span[2]/div/input", "xpath:position"]
+      ],
+      "value": "00:00:00"
+    }, {
+      "id": "5955e64e-a121-4cc2-910d-5cdf0163f47b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-plain > span",
+      "targets": [
+        ["css=.is-plain > span", "css:finder"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57a06c47-7784-4858-9f85-48d57da24188",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.total > span",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "0efa3953-5a45-4699-9c89-c38fe6a863df",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "133381ac-3cab-47e5-b04a-2ce12f53d353",
+    "name": "PSY_Admin_HelpRecord_ConsultantName_Date_AllxHours_TC02",
+    "commands": [{
+      "id": "7d50503d-aafe-4653-baea-8611be66ab11",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffbeb401-67c6-4994-bbca-bc459c09a784",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ae47b11-1076-4778-b5b5-546dee1e4a10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c45f320d-eaeb-4e83-9dce-48782630768f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "a30dd591-54c5-41f1-b8c6-45acba292146",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6517993a-171c-4556-8398-54236875ff62",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "82973b66-ef21-45c2-bf48-4851bbc884cc",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "46698d23-41a5-493a-9d1a-c336bea7e2eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e821b61f-2039-41e0-ae24-f4a074cedeb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8b7b9d1-f183-4f13-8bf5-67cb46721a2f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "咨询师张哥"
+    }, {
+      "id": "c25e24ee-9ad3-40d4-b15e-98b090833167",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b1828ff8-4075-4c9a-b3c8-83d5a01eb3a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-range-input:nth-child(2)",
+      "targets": [
+        ["css=.el-range-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2abe4d0-f30d-42a2-acea-276e0c21573f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//span/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6918aa0e-aff3-4044-9687-92720a07424c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//span/div/input", "xpath:position"]
+      ],
+      "value": "2021-12-15"
+    }, {
+      "id": "2cbdec07-6ba3-4e5b-b342-ff37629ba298",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1)",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a666590-a9b3-49c1-a5d0-8bfadb7a1e1b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//span[2]/div/input", "xpath:position"]
+      ],
+      "value": "00:00:00"
+    }, {
+      "id": "a8df23bf-a3dd-4260-8ca0-4ee1ab4fb3be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//span[3]/span/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82484703-f7b6-4ce0-be9d-60435110eca4",
+      "comment": "",
+      "command": "type",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//span[3]/span/div/input", "xpath:position"]
+      ],
+      "value": "2021-12-15"
+    }, {
+      "id": "737006b9-69c9-409d-89d5-ded887a6a48e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//span[3]/span[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a0fc2c9-ea37-4d02-808a-59ce90e1ca04",
+      "comment": "",
+      "command": "type",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//span[3]/span[2]/div/input", "xpath:position"]
+      ],
+      "value": "23:30:00"
+    }, {
+      "id": "07e6407c-3ce7-4413-880b-0261bc71a3a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-plain > span",
+      "targets": [
+        ["css=.is-plain > span", "css:finder"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87daa3d3-ffee-44b1-a9bb-f85a828e53dd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.total > span",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "7612fe5e-61e5-4edb-b011-242cc67de15b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a2049c08-4c55-4faf-ad60-bb4d130229e1",
+    "name": "PSY_Admin_HelpRecord_ConsultantName_Date_MultxDays_TC03",
+    "commands": [{
+      "id": "93cadaeb-edf9-4dad-93b2-2dde4e25a005",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81a3ead3-289d-4ab7-a0b6-394ef33a5d76",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3ba9a34-8743-4cdd-a69c-b5e00e6c243a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "930b3067-4efa-44ab-9b3d-40aaae37939d",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "f90146a6-ee03-4cdc-8a39-047aa5890bfb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fb67274-585c-44f3-aa75-eb8ec10d45b8",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "e04f42c5-fc25-4279-9abc-d296e791af09",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0a53c41c-2ba3-4122-936e-a1b4a5ae928b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "591b0dd7-8883-4c11-8a48-d6955a614a62",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f41e360f-8fb6-4e35-ade5-7ee46e0a1370",
+      "comment": "",
+      "command": "type",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "咨询 哥"
+    }, {
+      "id": "0c42cb91-13c8-4c7f-8d13-04dc979524ef",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "bcfbc43c-a55b-4e71-b6eb-b41e3c28f717",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-range-input:nth-child(2)",
+      "targets": [
+        ["css=.el-range-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccec3741-c10f-4ba6-8b8f-294d7964de33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//span/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8b81285-c616-474f-ae04-c5316202db32",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//span/div/input", "xpath:position"]
+      ],
+      "value": "2021-12-15"
+    }, {
+      "id": "9632a0f8-39cc-4f07-84e9-40c21152c77a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1)",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96483f97-021f-4fdf-9e13-926b52763923",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//span[2]/div/input", "xpath:position"]
+      ],
+      "value": "00:00:00"
+    }, {
+      "id": "1379fad3-e903-4ce6-861e-a97832f2110d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//span[3]/span/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b762a17f-913b-4c1a-b49a-1a74e013bd68",
+      "comment": "",
+      "command": "type",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//span[3]/span/div/input", "xpath:position"]
+      ],
+      "value": "2021-12-18"
+    }, {
+      "id": "c978e1f9-fe81-4c28-80b9-10550662e13f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//span[3]/span[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67e03af2-0b0e-495d-a0fd-c9ec8a0e0002",
+      "comment": "",
+      "command": "type",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//span[3]/span[2]/div/input", "xpath:position"]
+      ],
+      "value": "00:00:00"
+    }, {
+      "id": "331a319b-b246-451d-b166-f7c11f3f35f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-plain > span",
+      "targets": [
+        ["css=.is-plain > span", "css:finder"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff39bc6a-8c97-4457-9bdc-94067719af02",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.el-table__empty-text",
+      "targets": [],
+      "value": "暂无数据"
+    }, {
+      "id": "5a7d640b-26cd-4f78-9d3f-66a062b2f61b",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.total > span",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "91b9e40b-fa1a-44ba-8c3c-16b9c84ab37b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "39cc529a-6fb4-4217-afdf-dbc59919f569",
+    "name": "PSY_Admin_HelpRecord_ConsultantName_Date_NotExistxDays_TC04",
+    "commands": [{
+      "id": "f3abb64c-aa6d-49f7-8398-c97b52965d49",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbb35acf-3047-4739-a888-d9a3a33ad01c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a4ac565-fdb8-4807-beaa-24974c2057d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4020846e-bbab-427b-927f-aa4a0faa977a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "dc23e77f-8d62-409e-adc4-ea8d70a20f9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73c3cb99-e902-4d44-95b1-84e9dd5adb78",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "27091ef9-ecc5-4a4d-b2a5-45f9249b65e7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "df2f30b9-085e-4cbd-be48-942a87c79407",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc1deeff-f0ab-4513-8a40-77ffeab62754",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a28bf40-5200-4241-a4cd-ba5d24c1ec23",
+      "comment": "",
+      "command": "type",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "哈哈"
+    }, {
+      "id": "b1e5de09-9e7c-45e2-a9f1-cfc79e89b348",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a131c6b2-1a3d-457f-82f8-34bd46eabddf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-range-input:nth-child(2)",
+      "targets": [
+        ["css=.el-range-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3600d754-0557-4b17-bc7c-adb126957bfb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//span/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d115a45-1374-4f52-bbdf-e29c3c1e36cd",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//span/div/input", "xpath:position"]
+      ],
+      "value": "2021-12-15"
+    }, {
+      "id": "ee8c9615-3fa2-4382-8fda-1dbe18012672",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1)",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbdd699a-6cb6-401b-99b8-60569b9ac51f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//span[2]/div/input", "xpath:position"]
+      ],
+      "value": "00:00:00"
+    }, {
+      "id": "a60aa993-6e73-4712-b5d7-2a6b8d88eced",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//span[3]/span/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bfdea26-acfa-44a2-ad1b-acf8621c04be",
+      "comment": "",
+      "command": "type",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//span[3]/span/div/input", "xpath:position"]
+      ],
+      "value": "2021-12-18"
+    }, {
+      "id": "cfb43e1a-3a71-4993-a1f0-e11744ffed54",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//span[3]/span[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90d3ecae-e307-4681-b8db-e6f70da16acb",
+      "comment": "",
+      "command": "type",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//span[3]/span[2]/div/input", "xpath:position"]
+      ],
+      "value": "00:00:00"
+    }, {
+      "id": "4b169d50-183a-4db7-a702-89e11f94ee6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-plain > span",
+      "targets": [
+        ["css=.is-plain > span", "css:finder"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a584733-e169-4ae2-86e7-b051f40aeb0b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.el-table__empty-text",
+      "targets": [],
+      "value": "暂无数据"
+    }, {
+      "id": "3e26804c-d74d-4253-9196-e3acdc4b11b5",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.total > span",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "d45579c9-8001-4351-9161-a4526fe999f5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3d66f77a-7605-4b30-bdf8-1ece9d599c11",
+    "name": "PSY_Admin_HelpRecord_ConsultantName_Date_SpacexHours_TC05",
+    "commands": [{
+      "id": "907982ac-d02e-4681-b72b-7ea425e8f9ac",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d990561-4365-4115-9f89-6528a076bb67",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3cf8a256-26e7-41bc-9676-75b974bb7cf9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6893de7-bc9b-45ab-bf46-3f823aac0e97",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "b622baba-d91a-400f-8b23-847878f14f1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6984f4a-a653-4a89-b1e7-3c5ac17fe92f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "6c93df5e-36cf-4265-841f-4c464ef17f20",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "5cd98dd9-9b67-48c2-8d93-3aa5631d685b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a65ff096-be2f-4d0f-a66d-d5b3b6514ad0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e386463c-7798-4c28-85f6-ad1db6f224d9",
+      "comment": "",
+      "command": "type",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": " 哥 "
+    }, {
+      "id": "4724ca1e-75c6-49ed-ab38-045f71ef0fcf",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.nameInput > .el-input__inner",
+      "targets": [
+        ["css=.nameInput > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9c0b6d17-9db6-4f84-bf7e-17670da01272",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-range-input:nth-child(2)",
+      "targets": [
+        ["css=.el-range-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b5937f6-4a7a-44de-8b42-1a090a897482",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//span/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fff12921-32b5-4a8d-b435-67f7f1b180be",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//span/div/input", "xpath:position"]
+      ],
+      "value": "2021-12-15"
+    }, {
+      "id": "57fd94e2-8035-4c40-9ec8-02532cecbaa2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1)",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1)", "css:finder"],
+        ["xpath=//body/div[2]/div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ed946c8-b901-41aa-b02c-a16664e7ca1f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-date-range-picker__editors-wrap:nth-child(1) > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//span[2]/div/input", "xpath:position"]
+      ],
+      "value": "00:00:00"
+    }, {
+      "id": "2b714aa6-305f-4141-93f3-7d8c136667e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//span[3]/span/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91fe694e-ea40-469b-a4aa-8db1ca0eabe6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//span[3]/span/div/input", "xpath:position"]
+      ],
+      "value": "2021-12-15"
+    }, {
+      "id": "f5b1651e-edd8-4ad2-80eb-1ed43ad41265",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//span[3]/span[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f6dea79-a686-43dc-a561-ad11e56bc1b6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.is-right > .el-date-range-picker__time-picker-wrap:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//span[3]/span[2]/div/input", "xpath:position"]
+      ],
+      "value": "23:30:00"
+    }, {
+      "id": "dceff4eb-712a-41ce-ad23-c81c910c8ac3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-plain > span",
+      "targets": [
+        ["css=.is-plain > span", "css:finder"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c12790f2-9e29-49bf-b9f5-8b5d0e650caf",
+      "comment": "",
+      "command": "//assertText",
+      "target": "css=.total > span",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "424a7d62-ed30-46a2-8955-6cf78aeaa139",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "59c3ad79-cbf7-4072-8801-8aeb773e5377",
+    "name": "PSY_Admin_HelpRecord_Export_One_TC01",
+    "commands": [{
+      "id": "a3697868-ee04-483d-b883-24be3227b3b9",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bd71596-7f79-4b67-a672-fff67f0907b9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1052x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74b209d0-6daf-4fce-8fe7-ac2f5e3b8645",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f6ddc2f-42c3-4cb1-8576-6aee36f75970",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "9cf5e017-3d8a-45fd-85af-01d416beb2b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "031675c2-1ed9-4eaf-ae45-7d75ebf6d91e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "63e17854-aaad-4176-aca6-7765d3a725d4",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ff6523ac-0368-4c35-9da2-cdf3a270e7d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4)",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]", "xpath:idRelative"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ff7dd03-f96a-43a7-b042-59065045be50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-table__row:nth-child(5) .el-button:nth-child(2) > span",
+      "targets": [
+        ["css=.el-table__row:nth-child(5) .el-button:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]/table/tbody/tr[5]/td[6]/div/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[6]/div/div/button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43c90e5d-1d2e-4f16-97cc-be26dd9d04ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-button--small:nth-child(2) > span",
+      "targets": [
+        ["css=.el-button--small:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[3]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'确认')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d3375a7-7c48-40e6-a47f-8d006632d878",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.el-button--small:nth-child(2) > span",
+      "targets": [
+        ["css=.el-button--small:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[3]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'确认')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9c57233-f8ae-4703-ae52-4e0cb7e67979",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.el-button--small:nth-child(2) > span",
+      "targets": [
+        ["css=.el-button--small:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[3]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'\n          确认\n        ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b007be17-8f70-4309-91a2-fb855b3203ff",
+    "name": "PSY_Admin_HelpRecord_Export_Many_TC02",
+    "commands": [{
+      "id": "3e8acef3-280f-49cf-8445-a1a3c17a7ff6",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0fc1d3d6-869c-4689-a3f6-c02206822d41",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1052x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06e7af5c-3087-41d3-b552-73adc4794e9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df6a925b-d57b-4427-9585-431d1dcb3ba6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "f174b996-5df1-4054-8728-c652efc63a54",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f03ed49a-cbe6-422d-94d8-50fff0bf8c3d",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "265a6538-55f2-4f8b-897b-38c9f8c43509",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "5278bddf-6c7d-42e7-95c6-0e3a3e968475",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a968f05c-032f-45ad-9668-baedeb4b6919",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-table__row:nth-child(2) .el-checkbox__input",
+      "targets": [
+        ["css=.el-table__row:nth-child(2) .el-checkbox__input", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]/table/tbody/tr[2]/td/div/label/span", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc4ba012-a413-496a-8061-2912254d379c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-table__row:nth-child(3) .el-checkbox__input",
+      "targets": [
+        ["css=.el-table__row:nth-child(3) .el-checkbox__input", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]/table/tbody/tr[3]/td/div/label/span", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/div/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "172d114a-fe60-4d31-aa35-6b477025d342",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-table__row:nth-child(5) .el-checkbox__input",
+      "targets": [
+        ["css=.el-table__row:nth-child(5) .el-checkbox__input", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]/table/tbody/tr[5]/td/div/label/span", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/div/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ef37d1f-1f5e-4ec2-b8d6-6d49c839786c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton > span",
+      "targets": [
+        ["css=.customButton > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'批量导出求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d4f19c9-4006-414b-990f-7bd8e4221e35",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.customButton > span",
+      "targets": [
+        ["css=.customButton > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'批量导出求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4afac0cf-d117-4edb-ba5b-a49603b7c84d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.customButton > span",
+      "targets": [
+        ["css=.customButton > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'批量导出求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfaac9fd-2e9b-4d37-8f36-40d1c6547e12",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-button--small:nth-child(2)",
+      "targets": [
+        ["css=.el-button--small:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[17]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'确认')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7545641-64bc-473d-800e-6cfd8edb50b0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.el-button--small:nth-child(2)",
+      "targets": [
+        ["css=.el-button--small:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[17]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'确认')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82d0916c-2863-4b86-b22d-b5ac98f98f6d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.el-button--small:nth-child(2)",
+      "targets": [
+        ["css=.el-button--small:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[17]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'确认')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8af9a0e6-7b3b-4a44-8323-4170437aa7b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-message",
+      "targets": [
+        ["css=.el-message", "css:finder"],
+        ["xpath=//body/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bdcb78ca-6320-432e-b7d7-658bfcca8a65",
+    "name": "PSY_Admin_HelpRecord_Export_All_TC03",
+    "commands": [{
+      "id": "0df6ad0c-dbe8-4ad0-895b-dd8a2109fb1e",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5f03b0a-771b-495a-b730-ee49c1dc87f4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e0f0a9e-e055-4149-8c01-81aaea18d35f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab58e089-8d37-422b-a53d-4cb08315b1ab",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_admin"
+    }, {
+      "id": "0eee50a4-d632-47d6-ad62-e18f344def64",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2e9a673-8d61-4157-a007-0f21238c3ca6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "2dffa7fb-b610-4292-8dbc-f950c7d0985b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "386ab90f-d65c-4d39-abd4-33f587e19276",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-menu-item:nth-child(4) > span",
+      "targets": [
+        ["css=.el-menu-item:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8f6be7b-2846-463e-a5fc-eac638b5df64",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-leaf .el-checkbox__inner",
+      "targets": [
+        ["css=.is-leaf .el-checkbox__inner", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[2]/table/thead/tr/th/div/label/span/span", "xpath:idRelative"],
+        ["xpath=//label/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7ab4889-1a76-4f87-9c98-d387cc7813f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.customButton > span",
+      "targets": [
+        ["css=.customButton > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'批量导出求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62f78edf-f0d7-4e19-a397-4c0623865c1a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.customButton > span",
+      "targets": [
+        ["css=.customButton > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'批量导出求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b507256-98f2-4195-8f04-43ed6d09ed69",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.customButton > span",
+      "targets": [
+        ["css=.customButton > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'批量导出求助记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bed03798-b453-4769-b2a4-cec67ec3b378",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-button--small:nth-child(2) > span",
+      "targets": [
+        ["css=.el-button--small:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[3]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'确认')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59dec45c-f27a-4ec9-8408-be82aab69996",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-message",
+      "targets": [
+        ["css=.el-message", "css:finder"],
+        ["xpath=//body/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "eb568ce5-8f25-4e96-827f-78078d8000c2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://sei-test.021hqit.com/", "https://sei-test.021hqit.com/group-6/#/login"],
+  "plugins": []
+}
