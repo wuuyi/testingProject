@@ -39,7 +39,7 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("")
-                .enterPhone("12311112222")
+                .enterPhone("12345678901")
                 .enterID("");
         Thread.sleep(500);
         counselorManagePage.assertNameErr("请输入姓名")
@@ -56,7 +56,7 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("一")
-                .enterPhone("12311112222")
+                .enterPhone("12345678901")
                 .enterID("");
         Thread.sleep(500);
         counselorManagePage.assertNameErr("请检查姓名输入是否正确")
@@ -73,7 +73,7 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("一二三四五六七八九十一二三四五六")
-                .enterPhone("1881771234")
+                .enterPhone("18120149879")
                 .enterID("");
         Thread.sleep(500);
         counselorManagePage.assertNameErr("请检查姓名输入是否正确")
@@ -90,8 +90,8 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("张zhang")
-                .enterPhone("13611818848")
-                .enterID("212120199876532222")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
                 .enterMail("");
         Thread.sleep(500);
         counselorManagePage.assertNameErr("请检查姓名输入是否正确")
@@ -108,8 +108,8 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("张#123")
-                .enterPhone("13611818848")
-                .enterID("2110032000071543")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
                 .enterMail("");
         Thread.sleep(500);
         counselorManagePage.assertNameErr("请检查姓名输入是否正确")
@@ -126,9 +126,9 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("咨询师小鸽")
-                .enterPhone("13611818848")
-                .enterID("2110032000071543211")
-                .enterMail("a23.-bc@sample.com")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
+                .enterMail("1337140734@com")
                 .enterDepartment("");
         Thread.sleep(500);
         counselorManagePage.assertIDErr("请检查格式后正确输入")
@@ -145,9 +145,9 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("咨询师小鸽")
-                .enterPhone("13611818848")
-                .enterID("310101199003071548")
-                .enterMail("12345@sample.com")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
+                .enterMail("1337140734@qq.com")
                 .enterDepartment("ECNU")
                 .enterCounTitle("高级咨询师")
                 .enterUserName("sei@123")
@@ -168,9 +168,9 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("密码长度五")
-                .enterPhone("13611818848")
-                .enterID("310101199003071548")
-                .enterMail("12345@sample.com")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
+                .enterMail("1337140734@qq.com")
                 .addSup(2)
                 .enterDepartment("ECNU")
                 .enterCounTitle("高级咨询师")
@@ -192,9 +192,9 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("密码长度二十一")
-                .enterPhone("13611818848")
-                .enterID("310101199003071548")
-                .enterMail("12345@sample.com")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
+                .enterMail("1337140734@qq.com")
                 .addSup(1)
                 .enterDepartment("ECNU")
                 .enterCounTitle("高级咨询师")
@@ -216,9 +216,9 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("密码长度五")
-                .enterPhone("13611818848")
-                .enterID("310101199003071548")
-                .enterMail("12345@sample.com")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
+                .enterMail("1337140734@qq.com")
                 .addSup(2)
                 .enterDepartment("ECNU")
                 .enterCounTitle("高级咨询师")
@@ -239,9 +239,9 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("重复用户名")
-                .enterPhone("13611818848")
-                .enterID("310101199003071548")
-                .enterMail("12345@sample.com")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
+                .enterMail("1337140734@qq.com")
                 .addSup(1)
                 .enterDepartment("ECNU")
                 .enterCounTitle("高级咨询师")
@@ -262,9 +262,9 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("纯数字用户名")
-                .enterPhone("13611818848")
-                .enterID("310101199003071548")
-                .enterMail("12345@sample.com")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
+                .enterMail("1337140734@qq.com")
                 .addSup(1)
                 .enterDepartment("ECNU")
                 .enterCounTitle("高级咨询师")
@@ -290,9 +290,9 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("长度三用户名")
-                .enterPhone("13611818848")
-                .enterID("310101199003071548")
-                .enterMail("12345@sample.com")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
+                .enterMail("1337140734@qq.com")
                 .addSup(1)
                 .enterDepartment("ECNU")
                 .enterCounTitle("高级咨询师")
@@ -318,9 +318,9 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("长度二十五用户名")
-                .enterPhone("13611818848")
-                .enterID("310101199003071548")
-                .enterMail("12345@sample.com")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
+                .enterMail("1337140734@qq.com")
                 .addSup(1)
                 .enterDepartment("ECNU")
                 .enterCounTitle("高级咨询师")
@@ -346,9 +346,9 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("重复用户名")
-                .enterPhone("13611818848")
-                .enterID("310101199003071548")
-                .enterMail("12345@sample.com")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
+                .enterMail("1337140734@qq.com")
                 .addSup(1)
                 .enterDepartment("ECNU")
                 .enterCounTitle("高级咨询师")
@@ -369,9 +369,9 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("咨一")
-                .enterPhone("13611118888")
-                .enterID("310101199003071548")
-                .enterMail("12345@sample.com")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
+                .enterMail("1337140734@qq.com")
                 .addSup(1)
                 .enterDepartment("ECNU")
                 .enterCounTitle("高级咨询师")
@@ -392,9 +392,9 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("AmyDuDao")
-                .enterPhone("13611118888")
-                .enterID("310101199003071548")
-                .enterMail("12345@sample.com")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
+                .enterMail("1337140734@qq.com")
                 .addSup(1)
                 .enterDepartment("ECNU")
                 .enterCounTitle("高级咨询师")
@@ -415,9 +415,9 @@ public class PSYAdminAccountCounselorNewTC extends BaseTest {
         counselorManagePage.clickNewCounselor();
 
         counselorManagePage.enterName("一二三四五六七八九十一二三四五")
-                .enterPhone("13611118888")
-                .enterID("310101199003071548")
-                .enterMail("12345@sample.com")
+                .enterPhone("18120149879")
+                .enterID("620102200306065828")
+                .enterMail("1337140734@qq.com")
                 .addSup(1)
                 .enterDepartment("ECNU")
                 .enterCounTitle("高级咨询师")
