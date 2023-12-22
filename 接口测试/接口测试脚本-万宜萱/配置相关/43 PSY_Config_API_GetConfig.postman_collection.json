@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "846f9949-fc9e-4c24-bd25-c57d58426c67",
+		"name": "PSY_Config_API_GetConfig",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26322411"
+	},
+	"item": [
+		{
+			"name": "PSY_Config_API_GetConfig_TC001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/config",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Config_API_GetConfig_TC002",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/config",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"config"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
