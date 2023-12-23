@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "10b2eefe-e742-453f-bf58-37a4c08f942c",
+		"name": "16 PSY_User_API_BanVisitor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31702260"
+	},
+	"item": [
+		{
+			"name": "User_API_BanVisitor_TC01",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"ff8081818c5df531018c641b39fe0008\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ban/ff8081818c5df531018c641b39fe0008",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ban",
+						"ff8081818c5df531018c641b39fe0008"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_BanVisitor_TC02",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"code pass\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(-1);\r",
+							"    pm.expect(jsonData.message).to.eql(\"用户不存在或已删除\")\r",
+							"    pm.expect(jsonData.result).to.eql(null)\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"ff8081817d33424e017dbe87da870004\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ban/ff8081817d33424e017dbe87da870004",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ban",
+						"ff8081817d33424e017dbe87da870004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_BanVisitor_TC03",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"code pass\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(-1);\r",
+							"    pm.expect(jsonData.message).to.eql(\"用户不存在或已删除\")\r",
+							"    pm.expect(jsonData.result).to.eql(null)\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"ff8081817d3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ban/ff8081817d3",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ban",
+						"ff8081817d3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_BanVisitor_TC04",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"code pass\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(405);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Method Not Allowed\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/ban/\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ban/",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ban",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_BanVisitor_TC05",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"code pass\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(405);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Method Not Allowed\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/ban/\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"ff8081818c5df531018c8307eef4017c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ban/ff8081818c5df531018c8307eef4017c",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ban",
+						"ff8081818c5df531018c8307eef4017c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_BanVisitor_TC06",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"code pass\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(405);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Method Not Allowed\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/ban/\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"ff8081818c5df531018c8173565f0178\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ban/ff8081818c5df531018c8173565f0178",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ban",
+						"ff8081818c5df531018c8173565f0178"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,1845 @@
+{
+	"info": {
+		"_postman_id": "a7503cbc-3243-4ccc-a1d5-0bbf29e63697",
+		"name": "11 PSY_User_API_GetCounselorList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31702260"
+	},
+	"item": [
+		{
+			"name": "User_API_GetCounselorList_TC01",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length != 0;\r",
+							"    tests[\"count pass\"] = jsonData.count != 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC02",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(500);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Internal Server Error\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/ms/supervisor/list\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?size=0",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "0"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC03",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length != 0;\r",
+							"    tests[\"count pass\"] = jsonData.count != 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?size=1000000000",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "1000000000"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC04",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(400);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Bad Request\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/ms/supervisor/list\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?size=abc??",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "abc??"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC05",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(500);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Internal Server Error\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/ms/supervisor/list\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?size=-1",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "-1"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC06",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length != 0;\r",
+							"    tests[\"count pass\"] = jsonData.count != 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?page=0",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC07",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length != 0;\r",
+							"    tests[\"count pass\"] = jsonData.count != 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/supervisor/list?page=1000000000",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"supervisor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1000000000"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC08",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(400);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Bad Request\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/ms/supervisor/list\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?page=abc??",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "abc??"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC09",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(500);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Internal Server Error\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/ms/supervisor/list\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?page=-1",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "-1"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length != 0;\r",
+							"    tests[\"count pass\"] = jsonData.count != 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?name=咨询师王五",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "咨询师王五"
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC11",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length == 0;\r",
+							"    tests[\"count pass\"] = jsonData.count == 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?name=咨询师王五五",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "咨询师王五五"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC12",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length != 0;\r",
+							"    tests[\"count pass\"] = jsonData.count != 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?name=  咨询师王五",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "  咨询师王五"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC13",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length != 0;\r",
+							"    tests[\"count pass\"] = jsonData.count != 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?department=软件学院",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "软件学院"
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC14",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length == 0;\r",
+							"    tests[\"count pass\"] = jsonData.count == 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?department=sei",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "sei"
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC15",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length != 0;\r",
+							"    tests[\"count pass\"] = jsonData.count != 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?department=  软件学院",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "  软件学院"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC16",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length != 0;\r",
+							"    tests[\"count pass\"] = jsonData.count != 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?gender=男",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "男"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC17",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length != 0;\r",
+							"    tests[\"count pass\"] = jsonData.count != 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?gender=女",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "女"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC18",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(400);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Bad Request\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/ms/supervisor/list\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?gender=未知",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "未知"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC19",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length != 0;\r",
+							"    tests[\"count pass\"] = jsonData.count != 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?phoneNumber=13355555555",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "13355555555"
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC20",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length != 0;\r",
+							"    tests[\"count pass\"] = jsonData.count != 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?phoneNumber=13666666666",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "13666666666"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC21",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(400);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Bad Request\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/ms/supervisor/list\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?phoneNumber=abc??",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "abc??"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC22",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetSupervisorList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    tests[\"result length pass\"] = jsonData.result.length != 0;\r",
+							"    tests[\"count pass\"] = jsonData.count != 0;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list?phoneNumber=  13355555555",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "  13355555555"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetCounselorList_TC23",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"test pass\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    console.log(jsonData)\r",
+							"    pm.expect(jsonData.status).to.eql(403);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Forbidden\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/ms/supervisor/list\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/list",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "phoneNumber",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

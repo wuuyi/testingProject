@@ -1,0 +1,351 @@
+{
+	"info": {
+		"_postman_id": "5e1b61d5-177d-4567-995b-12dc4338a64d",
+		"name": "24 PSY_Arrange_API_SearchDutyOnline",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31702260"
+	},
+	"item": [
+		{
+			"name": "Arrange_API_SearchDutyOnline_TC01",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"参数错误:\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/arrange/theday?timestamp&type&state&page&size",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"theday"
+					],
+					"query": [
+						{
+							"key": "timestamp",
+							"value": null
+						},
+						{
+							"key": "type",
+							"value": null
+						},
+						{
+							"key": "state",
+							"value": null
+						},
+						{
+							"key": "page",
+							"value": null
+						},
+						{
+							"key": "size",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_SearchDutyOnline_TC02",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"参数错误:\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/arrange/theday?timestamp=1638290000000&type&state&page&size",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"theday"
+					],
+					"query": [
+						{
+							"key": "timestamp",
+							"value": "1638290000000"
+						},
+						{
+							"key": "type",
+							"value": null
+						},
+						{
+							"key": "state",
+							"value": null
+						},
+						{
+							"key": "page",
+							"value": null
+						},
+						{
+							"key": "size",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_SearchDutyOnline_TC03",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.status).to.eql(500);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/arrange/theday?timestamp&type=COUNSELOR&state&page&size",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"theday"
+					],
+					"query": [
+						{
+							"key": "timestamp",
+							"value": null
+						},
+						{
+							"key": "type",
+							"value": "COUNSELOR"
+						},
+						{
+							"key": "state",
+							"value": null
+						},
+						{
+							"key": "page",
+							"value": null
+						},
+						{
+							"key": "size",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_SearchDutyOnline_TC04",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(0);",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/arrange/theday?timestamp=1638290000000&type=COUNSELOR&state&page&size",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"theday"
+					],
+					"query": [
+						{
+							"key": "timestamp",
+							"value": "1638290000000"
+						},
+						{
+							"key": "type",
+							"value": "COUNSELOR"
+						},
+						{
+							"key": "state",
+							"value": null
+						},
+						{
+							"key": "page",
+							"value": null
+						},
+						{
+							"key": "size",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_SearchDutyOnline_TC05",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"参数错误:\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/arrange/theday?timestamp=&type=TEST&state&page&size",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"theday"
+					],
+					"query": [
+						{
+							"key": "timestamp",
+							"value": ""
+						},
+						{
+							"key": "type",
+							"value": "TEST"
+						},
+						{
+							"key": "state",
+							"value": null
+						},
+						{
+							"key": "page",
+							"value": null
+						},
+						{
+							"key": "size",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_SearchDutyOnline_TC06",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"参数错误:\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/arrange/theday?timestamp=1638290000000&type=TEST&state&page&size",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"theday"
+					],
+					"query": [
+						{
+							"key": "timestamp",
+							"value": "1638290000000"
+						},
+						{
+							"key": "type",
+							"value": "TEST"
+						},
+						{
+							"key": "state",
+							"value": null
+						},
+						{
+							"key": "page",
+							"value": null
+						},
+						{
+							"key": "size",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

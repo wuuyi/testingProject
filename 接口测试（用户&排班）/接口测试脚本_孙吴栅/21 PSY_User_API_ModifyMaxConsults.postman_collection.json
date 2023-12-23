@@ -1,0 +1,472 @@
+{
+	"info": {
+		"_postman_id": "f7761b60-6bd2-4b75-925e-3d074ea8d394",
+		"name": "21 PSY_User_API_ModifyMaxConsults",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31702260"
+	},
+	"item": [
+		{
+			"name": "User_API_ModifyMaxConsults_TC01",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    pm.expect(jsonData.result.maxConsults).to.eql(0);\r",
+							"    pm.expect(jsonData.result.type).to.eql(\"COUNSELOR\");\r",
+							"    pm.expect(jsonData.result.roles).to.eql(\"ROLE_COUNSELOR\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"maxConsults\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/maxconsults",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"maxconsults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_ModifyMaxConsults_TC02",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    pm.expect(jsonData.result.maxConsults).to.eql(10);\r",
+							"    pm.expect(jsonData.result.type).to.eql(\"COUNSELOR\");\r",
+							"    pm.expect(jsonData.result.roles).to.eql(\"ROLE_COUNSELOR\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"maxConsults\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/maxconsults",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"maxconsults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_ModifyMaxConsults_TC03",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    pm.expect(jsonData.result.maxConsults).to.eql(12345678901234567890123);\r",
+							"    pm.expect(jsonData.result.type).to.eql(\"COUNSELOR\");\r",
+							"    pm.expect(jsonData.result.roles).to.eql(\"ROLE_COUNSELOR\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"maxConsults\": 12345678901234567890123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/maxconsults",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"maxconsults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_ModifyMaxConsults_TC04",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    pm.expect(jsonData.result.type).to.eql(\"COUNSELOR\");\r",
+							"    pm.expect(jsonData.result.roles).to.eql(\"ROLE_COUNSELOR\");\r",
+							"});\r",
+							"\r",
+							"var jsonData = pm.response.json();\r",
+							"tests[\"maxConsults do not change\"] = jsonData.result.maxConsults != -1;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"maxConsults\": -1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/maxconsults",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"maxconsults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_ModifyMaxConsults_TC05",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    pm.expect(jsonData.result.type).to.eql(\"COUNSELOR\");\r",
+							"    pm.expect(jsonData.result.roles).to.eql(\"ROLE_COUNSELOR\");\r",
+							"});\r",
+							"\r",
+							"var jsonData = pm.response.json();\r",
+							"tests[\"maxConsults do not change\"] = jsonData.maxConsults != \"*****\";"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"maxConsults\": \"*****\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/maxconsults",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"maxconsults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_ModifyMaxConsults_TC06",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    pm.expect(jsonData.result.type).to.eql(\"COUNSELOR\");\r",
+							"    pm.expect(jsonData.result.roles).to.eql(\"ROLE_COUNSELOR\");\r",
+							"});\r",
+							"\r",
+							"var jsonData = pm.response.json();\r",
+							"tests[\"maxConsults do not change\"] = jsonData.maxConsults != \"00000\";"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"maxConsults\": \"00000\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/maxconsults",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"maxconsults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_ModifyMaxConsults_TC07",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(400);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Bad Request\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/maxconsults\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"maxConsults\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/maxconsults",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"maxconsults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_ModifyMaxConsults_TC08",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(403);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Forbidden\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/maxconsults\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"maxConsults\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/maxconsults",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"maxconsults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_ModifyMaxConsults_TC09",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    pm.expect(jsonData.result.type).to.eql(\"SUPERVISOR\");\r",
+							"    pm.expect(jsonData.result.roles).to.eql(\"ROLE_SUPERVISOR\");\r",
+							"    pm.expect(jsonData.result.maxConsults).to.eql(150);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"maxConsults\": 150\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-3/liwa-api/user/maxconsults",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-3",
+						"liwa-api",
+						"user",
+						"maxconsults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_ModifyMaxConsults_TC10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    pm.expect(jsonData.result.type).to.eql(\"INSTITUTION\");\r",
+							"    pm.expect(jsonData.result.roles).to.eql(\"ROLE_INSTITUTION_ADMINISTRATOR\");\r",
+							"    pm.expect(jsonData.result.maxConsults).to.eql(150);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"maxConsults\": 150\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-3/liwa-api/user/maxconsults",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-3",
+						"liwa-api",
+						"user",
+						"maxconsults"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

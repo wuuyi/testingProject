@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "66e510db-901c-4c0f-848c-b384f8b92ecf",
+		"name": "15 PSY_User_API_DeleteCounselor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31702260"
+	},
+	"item": [
+		{
+			"name": "User_API_DeleteCounselor_TC01",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"    pm.expect(jsonData.result).to.eql(\"删除成功\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"sei_zxstt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/sei_zxstt",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"sei_zxstt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_DeleteCounselor_TC02",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"没有找到对应的咨询师\");\r",
+							"    pm.expect(jsonData.result).to.eql(null);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"sei_zxstt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/sei_zxstt",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						"sei_zxstt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_DeleteCounselor_TC03",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(405);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Method Not Allowed\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/ms/counselor/\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_DeleteCounselor_TC04",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(403);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Forbidden\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/ms/counselor/\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"sei_zxs_lijie\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/ms/counselor/",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"ms",
+						"counselor",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

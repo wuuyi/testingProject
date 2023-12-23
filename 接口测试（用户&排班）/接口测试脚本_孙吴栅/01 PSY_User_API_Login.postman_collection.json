@@ -1,0 +1,657 @@
+{
+	"info": {
+		"_postman_id": "b0464860-cd44-41bb-b39e-b545431316b5",
+		"name": "01 PSY_User_API_Login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31702260"
+	},
+	"item": [
+		{
+			"name": "User_API_Login_TC01",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//利用断言判断结果是否符合预期\r",
+							"pm.test('Test Pass',function(){\r",
+							"    var jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData.code).to.eql(0)\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\")\r",
+							"    pm.expect(jsonData.result).to.eql(\"ok\")\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"ecnu_admin\",\r\n \"password\":\"173afad5992a3f73a472fc09b05b1fb7\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/auth/login",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				},
+				"description": "\n### Auth Login\n\nThis endpoint is used to authenticate a user and obtain an access token.\n\n#### Request Body\n- `username` (text) - The username of the user.\n- `password` (text) - The password of the user.\n\n#### Response\n- `code` - The status code of the response.\n- `message` - Additional information or error message.\n- `result` - The result of the authentication process.\n\nExample:\n```json\n{\n    \"code\": 0,\n    \"message\": \"\",\n    \"result\": \"\"\n}\n```\n"
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_TC02",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//利用断言判断结果是否符合预期\r",
+							"pm.test('Test Pass',function(){\r",
+							"    var jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData.code).to.eql(-2)\r",
+							"    pm.expect(jsonData.message).to.eql(\"用户名或密码错误!\")\r",
+							"    pm.expect(jsonData.result).to.eql(null)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"ecnu_admin\",\r\n \"password\":\"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/auth/login",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				},
+				"description": "\n### Auth Login\n\nThis endpoint is used to authenticate a user and obtain an access token.\n\n#### Request Body\n- `username` (text) - The username of the user.\n- `password` (text) - The password of the user.\n\n#### Response\n- `code` - The status code of the response.\n- `message` - Additional information or error message.\n- `result` - The result of the authentication process.\n\nExample:\n```json\n{\n    \"code\": 0,\n    \"message\": \"\",\n    \"result\": \"\"\n}\n```\n"
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_TC03",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//利用断言判断结果是否符合预期\r",
+							"pm.test('Test Pass',function(){\r",
+							"    var jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData.code).to.eql(-2)\r",
+							"    pm.expect(jsonData.message).to.eql(\"用户名或密码错误!\")\r",
+							"    pm.expect(jsonData.result).to.eql(null)\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"ecnu_admin\",\r\n \"password\":\"\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/auth/login",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				},
+				"description": "\n### Auth Login\n\nThis endpoint is used to authenticate a user and obtain an access token.\n\n#### Request Body\n- `username` (text) - The username of the user.\n- `password` (text) - The password of the user.\n\n#### Response\n- `code` - The status code of the response.\n- `message` - Additional information or error message.\n- `result` - The result of the authentication process.\n\nExample:\n```json\n{\n    \"code\": 0,\n    \"message\": \"\",\n    \"result\": \"\"\n}\n```\n"
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_TC04",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//利用断言判断结果是否符合预期\r",
+							"pm.test('Test Pass',function(){\r",
+							"    var jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData.code).to.eql(-3)\r",
+							"    pm.expect(jsonData.message).to.eql(\"该用户名不存在或已被禁用，请核实后再登录!\")\r",
+							"    pm.expect(jsonData.result).to.eql(null)\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"admin123\",\r\n \"password\":\"173afad5992a3f73a472fc09b05b1fb7\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/auth/login",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "\n### Auth Login\n\nThis endpoint is used to authenticate a user and obtain an access token.\n\n#### Request Body\n- `username` (text) - The username of the user.\n- `password` (text) - The password of the user.\n\n#### Response\n- `code` - The status code of the response.\n- `message` - Additional information or error message.\n- `result` - The result of the authentication process.\n\nExample:\n```json\n{\n    \"code\": 0,\n    \"message\": \"\",\n    \"result\": \"\"\n}\n```\n"
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_TC05",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//利用断言判断结果是否符合预期\r",
+							"pm.test('Test Pass',function(){\r",
+							"    var jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData.code).to.eql(-3)\r",
+							"    pm.expect(jsonData.message).to.eql(\"该用户名不存在或已被禁用，请核实后再登录!\")\r",
+							"    pm.expect(jsonData.result).to.eql(null)\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"admin123\",\r\n \"password\":\"\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/auth/login",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "\n### Auth Login\n\nThis endpoint is used to authenticate a user and obtain an access token.\n\n#### Request Body\n- `username` (text) - The username of the user.\n- `password` (text) - The password of the user.\n\n#### Response\n- `code` - The status code of the response.\n- `message` - Additional information or error message.\n- `result` - The result of the authentication process.\n\nExample:\n```json\n{\n    \"code\": 0,\n    \"message\": \"\",\n    \"result\": \"\"\n}\n```\n"
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_TC06",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//利用断言判断结果是否符合预期\r",
+							"pm.test('Test Pass',function(){\r",
+							"    var jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData.code).to.eql(-3)\r",
+							"    pm.expect(jsonData.message).to.eql(\"该用户名不存在或已被禁用，请核实后再登录!\")\r",
+							"    pm.expect(jsonData.result).to.eql(null)\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"123admin\",\r\n \"password\":\"173afad5992a3f73a472fc09b05b1fb7\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/auth/login",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "\n### Auth Login\n\nThis endpoint is used to authenticate a user and obtain an access token.\n\n#### Request Body\n- `username` (text) - The username of the user.\n- `password` (text) - The password of the user.\n\n#### Response\n- `code` - The status code of the response.\n- `message` - Additional information or error message.\n- `result` - The result of the authentication process.\n\nExample:\n```json\n{\n    \"code\": 0,\n    \"message\": \"\",\n    \"result\": \"\"\n}\n```\n"
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_TC07",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//利用断言判断结果是否符合预期\r",
+							"pm.test('Test Pass',function(){\r",
+							"    var jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData.code).to.eql(-3)\r",
+							"    pm.expect(jsonData.message).to.eql(\"该用户名不存在或已被禁用，请核实后再登录!\")\r",
+							"    pm.expect(jsonData.result).to.eql(null)\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"123admin\",\r\n \"password\":\"\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/auth/login",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "\n### Auth Login\n\nThis endpoint is used to authenticate a user and obtain an access token.\n\n#### Request Body\n- `username` (text) - The username of the user.\n- `password` (text) - The password of the user.\n\n#### Response\n- `code` - The status code of the response.\n- `message` - Additional information or error message.\n- `result` - The result of the authentication process.\n\nExample:\n```json\n{\n    \"code\": 0,\n    \"message\": \"\",\n    \"result\": \"\"\n}\n```\n"
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_TC08",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//利用断言判断结果是否符合预期\r",
+							"pm.test('Test Pass',function(){\r",
+							"    var jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData.code).to.eql(-3)\r",
+							"    pm.expect(jsonData.message).to.eql(\"该用户名不存在或已被禁用，请核实后再登录!\")\r",
+							"    pm.expect(jsonData.result).to.eql(null)\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"??admin\",\r\n \"password\":\"173afad5992a3f73a472fc09b05b1fb7\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/auth/login",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "\n### Auth Login\n\nThis endpoint is used to authenticate a user and obtain an access token.\n\n#### Request Body\n- `username` (text) - The username of the user.\n- `password` (text) - The password of the user.\n\n#### Response\n- `code` - The status code of the response.\n- `message` - Additional information or error message.\n- `result` - The result of the authentication process.\n\nExample:\n```json\n{\n    \"code\": 0,\n    \"message\": \"\",\n    \"result\": \"\"\n}\n```\n"
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_TC09",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//利用断言判断结果是否符合预期\r",
+							"pm.test('Test Pass',function(){\r",
+							"    var jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData.code).to.eql(-3)\r",
+							"    pm.expect(jsonData.message).to.eql(\"该用户名不存在或已被禁用，请核实后再登录!\")\r",
+							"    pm.expect(jsonData.result).to.eql(null)\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"??admin\",\r\n \"password\":\"\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/auth/login",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "\n### Auth Login\n\nThis endpoint is used to authenticate a user and obtain an access token.\n\n#### Request Body\n- `username` (text) - The username of the user.\n- `password` (text) - The password of the user.\n\n#### Response\n- `code` - The status code of the response.\n- `message` - Additional information or error message.\n- `result` - The result of the authentication process.\n\nExample:\n```json\n{\n    \"code\": 0,\n    \"message\": \"\",\n    \"result\": \"\"\n}\n```\n"
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_TC10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//利用断言判断结果是否符合预期\r",
+							"pm.test('Test Pass',function(){\r",
+							"    var jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData.code).to.eql(-3)\r",
+							"    pm.expect(jsonData.message).to.eql(\"该用户名不存在或已被禁用，请核实后再登录!\")\r",
+							"    pm.expect(jsonData.result).to.eql(null)\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"ad\",\r\n \"password\":\"173afad5992a3f73a472fc09b05b1fb7\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/auth/login",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "\n### Auth Login\n\nThis endpoint is used to authenticate a user and obtain an access token.\n\n#### Request Body\n- `username` (text) - The username of the user.\n- `password` (text) - The password of the user.\n\n#### Response\n- `code` - The status code of the response.\n- `message` - Additional information or error message.\n- `result` - The result of the authentication process.\n\nExample:\n```json\n{\n    \"code\": 0,\n    \"message\": \"\",\n    \"result\": \"\"\n}\n```\n"
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_TC11",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//利用断言判断结果是否符合预期\r",
+							"pm.test('Test Pass',function(){\r",
+							"    var jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData.code).to.eql(-3)\r",
+							"    pm.expect(jsonData.message).to.eql(\"该用户名不存在或已被禁用，请核实后再登录!\")\r",
+							"    pm.expect(jsonData.result).to.eql(null)\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"ad\",\r\n \"password\":\"\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/auth/login",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "\n### Auth Login\n\nThis endpoint is used to authenticate a user and obtain an access token.\n\n#### Request Body\n- `username` (text) - The username of the user.\n- `password` (text) - The password of the user.\n\n#### Response\n- `code` - The status code of the response.\n- `message` - Additional information or error message.\n- `result` - The result of the authentication process.\n\nExample:\n```json\n{\n    \"code\": 0,\n    \"message\": \"\",\n    \"result\": \"\"\n}\n```\n"
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_TC12",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//利用断言判断结果是否符合预期\r",
+							"pm.test('Test Pass',function(){\r",
+							"    var jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData.code).to.eql(-3)\r",
+							"    pm.expect(jsonData.message).to.eql(\"该用户名不存在或已被禁用，请核实后再登录!\")\r",
+							"    pm.expect(jsonData.result).to.eql(null)\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"adminadminadminadminadmin\",\r\n \"password\":\"173afad5992a3f73a472fc09b05b1fb7\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/auth/login",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "\n### Auth Login\n\nThis endpoint is used to authenticate a user and obtain an access token.\n\n#### Request Body\n- `username` (text) - The username of the user.\n- `password` (text) - The password of the user.\n\n#### Response\n- `code` - The status code of the response.\n- `message` - Additional information or error message.\n- `result` - The result of the authentication process.\n\nExample:\n```json\n{\n    \"code\": 0,\n    \"message\": \"\",\n    \"result\": \"\"\n}\n```\n"
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_TC13",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//利用断言判断结果是否符合预期\r",
+							"pm.test('Test Pass',function(){\r",
+							"    var jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData.code).to.eql(-3)\r",
+							"    pm.expect(jsonData.message).to.eql(\"该用户名不存在或已被禁用，请核实后再登录!\")\r",
+							"    pm.expect(jsonData.result).to.eql(null)\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"username\":\"adminadminadminadminadmin\",\r\n \"password\":\"\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/auth/login",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "\n### Auth Login\n\nThis endpoint is used to authenticate a user and obtain an access token.\n\n#### Request Body\n- `username` (text) - The username of the user.\n- `password` (text) - The password of the user.\n\n#### Response\n- `code` - The status code of the response.\n- `message` - Additional information or error message.\n- `result` - The result of the authentication process.\n\nExample:\n```json\n{\n    \"code\": 0,\n    \"message\": \"\",\n    \"result\": \"\"\n}\n```\n"
+			},
+			"response": []
+		}
+	]
+}
