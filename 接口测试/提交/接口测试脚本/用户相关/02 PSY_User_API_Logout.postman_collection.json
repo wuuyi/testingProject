@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "1fe4bc94-2c33-4eb7-bf39-e24f67691a8e",
+		"name": "02 PSY_User_API_Logout",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31702260"
+	},
+	"item": [
+		{
+			"name": "User_API_Logout_TC01",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// User API should be inaccessable after logged out.\r",
+							"\r",
+							"pm.sendRequest({\r",
+							"    url: pm.globals.get(\"base\") + '/auth/me',\r",
+							"    method: 'GET'\r",
+							"}, function (err, res) {\r",
+							"    pm.test('check user API permissions', () => {\r",
+							"        // pm.expect(res.json().timestamp).to.equal('');\r",
+							"        pm.expect(res.json().error).to.equal('Forbidden');\r",
+							"        pm.expect(res.json().status).to.equal(403);\r",
+							"        pm.expect(res.json().path).to.equal('/auth/me')\r",
+							"    });\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Login before sending logout request.\r",
+							"\r",
+							"pm.sendRequest({\r",
+							"    url: pm.globals.get(\"base\") + '/auth/login',\r",
+							"    method: 'POST',\r",
+							"    body: {\r",
+							"        mode: 'raw',\r",
+							"        raw: JSON.stringify({\r",
+							"            \"username\":\"ecnu_admin\",\r",
+							"            \"password\":\"173afad5992a3f73a472fc09b05b1fb7\"\r",
+							"        })\r",
+							"    }\r",
+							"}, function (err, res) {\r",
+							"    if (err) {\r",
+							"        console.log(error);\r",
+							"    }\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/logout",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Logout_TC02",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// User API should be inaccessable after logged out.\r",
+							"\r",
+							"pm.sendRequest({\r",
+							"    url: pm.globals.get(\"base\") + '/auth/me',\r",
+							"    method: 'GET'\r",
+							"}, function (err, res) {\r",
+							"    pm.test('check user API permissions', () => {\r",
+							"        pm.expect(res.json().error).to.equal('Forbidden');\r",
+							"        pm.expect(res.json().status).to.equal(403);\r",
+							"    });\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/logout",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

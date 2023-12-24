@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "3236c042-e752-435a-9b3a-0c2e8b8277df",
+		"name": "PSY_Evaluate_API_AddEvaluate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26322411"
+	},
+	"item": [
+		{
+			"name": "PSY_Evaluate_API_AddEvaluate_TC001",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conversationId\": \"ff8081818c5df531018c7617634900a5\",\r\n    \"objectType\": \"CONVERSATION\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/evaluate",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"evaluate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Evaluate_API_AddEvaluate_TC002",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conversationId\": \"ff8081818c5df531018c7617634900a5\",\r\n    \"objectType\": \"CONVERSATION\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/evaluate",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"evaluate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Evaluate_API_AddEvaluate_TC003",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conversationId\": \"kk8081818c5df531018c7618565b00a6\",\r\n    \"objectType\": \"CONVERSATION\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/evaluate",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"evaluate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Evaluate_API_AddEvaluate_TC004",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conversationId\": \"\",\r\n    \"objectType\": \"CONVERSATION\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/evaluate",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"evaluate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Evaluate_API_AddEvaluate_TC005",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conversationId\": \"ff8081818c5df531018c7617039100a4\",\r\n    \"objectType\": \"ACONVERSATION\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/evaluate",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"evaluate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Evaluate_API_AddEvaluate_TC006",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conversationId\": \"ff8081818c5df531018c76162a0600a3\",\r\n    \"objectType\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/evaluate",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"evaluate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Evaluate_API_AddEvaluate_TC007",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conversationId\": \"ff8081818c5df531018c75e0a48a00a1\",\r\n    \"objectType\": \"CONVERSATION\",\r\n    \"level\": 5,\r\n    \"content\": \"好好好非常好\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/evaluate",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"evaluate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Evaluate_API_AddEvaluate_TC008",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conversationId\": \"ff8081818c5df531018c75dc98040098\",\r\n    \"objectType\": \"CONVERSATION\",\r\n    \"level\": 10,\r\n    \"content\": \"好好好非常好\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/evaluate",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"evaluate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Evaluate_API_AddEvaluate_TC009",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conversationId\": \"ff8081818c5df531018c75d86e430095\",\r\n    \"objectType\": \"CONVERSATION\",\r\n    \"level\": -1,\r\n    \"content\": \"好好好非常好\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/evaluate",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"evaluate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

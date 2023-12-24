@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "9b9e6804-4ca4-433e-be31-30ec43b9315d",
+		"name": "PSY_Conversation_API_TodayChange",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26322411"
+	},
+	"item": [
+		{
+			"name": "PSY_Conversation_API_TodayChange_TC001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/todaychange",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"todaychange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_TodayChange_TC002",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/todaychange",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"todaychange"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

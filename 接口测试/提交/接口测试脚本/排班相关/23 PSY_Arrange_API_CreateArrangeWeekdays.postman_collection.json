@@ -1,0 +1,1075 @@
+{
+	"info": {
+		"_postman_id": "c6b03c49-d345-4eb4-8d37-4ef8f16dedbb",
+		"name": "23 PSY_Arrange_API_CreateArrangeWeekdays",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31702260"
+	},
+	"item": [
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC01",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(\"invalid request body\");",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"\",\n  \"weekDays\": [],\n  \"userType\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC02",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(\"invalid request body\");",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"\",\n  \"weekDays\": [1,2,3],\n  \"userType\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC03",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(\"invalid request body\");",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"\",\n  \"weekDays\": [9],\n  \"userType\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC04",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(\"invalid request body\");",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"\",\n  \"weekDays\": [1,8],\n  \"userType\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC05",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"ff8081818c5df531018c8173565f0178\",\n  \"weekDays\": [],\n  \"userType\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC06",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(\"invalid request body\");",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"ff8081817dcbc8c0017dd885771a01c8\",\n  \"weekDays\": [1,2,3],\n  \"userType\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC07",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(\"invalid request body\");",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"ff8081818c5df531018c641b39fe0008\",\n  \"weekDays\": [9],\n  \"userType\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC08",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"ff8081818c5df531018c641b39fe0008\",\n  \"weekDays\": [1,8],\n  \"userType\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC09",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"fg8081817dcbc8c0017dd3f8782401c2\",\n  \"weekDays\": [],\n  \"userType\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(\"invalid request body\");",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"fg8081817dcbc8c0017dd3f8782401c2\",\n  \"weekDays\": [1,2,3],\n  \"userType\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC11",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(\"invalid request body\");",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"fg8081817dcbc8c0017dd3f8782401c2\",\n  \"weekDays\": [9],\n  \"userType\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC12",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"fg8081817dcbc8c0017dd3f8782401c2\",\n  \"weekDays\": [1,8],\n  \"userType\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC13",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(\"invalid request body\");",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"123456\",\n  \"weekDays\": [],\n  \"userType\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC14",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"123456\",\n  \"weekDays\": [1,2,3],\n  \"userType\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC15",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"123456\",\n  \"weekDays\": [9],\n  \"userType\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC16",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(\"invalid request body\");",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"123456\",\n  \"weekDays\": [1,8],\n  \"userType\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC17",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(\"invalid request body\");",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"????????????????????????????????\",\n  \"weekDays\": [],\n  \"userType\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC18",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"????????????????????????????????\",\n  \"weekDays\": [1,2,3],\n  \"userType\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC19",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"????????????????????????????????\",\n  \"weekDays\": [9],\n  \"userType\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC20",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(\"invalid request body\");",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"????????????????????????????????\",\n  \"weekDays\": [1,8],\n  \"userType\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC21",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"ff8081817dcbc8c0017dd885771a01c?\",\n  \"weekDays\": [],\n  \"userType\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC22",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(\"invalid request body\");",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"ff8081817dcbc8c0017dd885771a01c?\",\n  \"weekDays\": [1,2,3],\n  \"userType\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC23",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(\"invalid request body\");",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"ff8081817dcbc8c0017dd885771a01c?\",\n  \"weekDays\": [9],\n  \"userType\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC24",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"ff8081817dcbc8c0017dd885771a01c?\",\n  \"weekDays\": [1,8],\n  \"userType\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeWeekdays_TC25",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(0);",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");",
+							"    pm.expect(jsonData.result).to.eql(\"ok\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"ff8081818c5df531018c8307eef4017c\",\n  \"weekDays\": [1,3],\n  \"userType\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange/batch",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange",
+						"batch"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
