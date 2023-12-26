@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "1dc80dcb-cb6e-459c-bf24-8413cabc9b53",
+		"name": "19 PSY_User_API_UpdateVisitor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31702260"
+	},
+	"item": [
+		{
+			"name": "User_API_UpdateVisitor_TC01",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"name\": \"Homan\",\r\n \"phoneNumber\": \"13900008080\",\r\n \"emergencyContact\": \"蒋峰\",\r\n \"emergencyPhone\": \"13900009999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/update",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_UpdateVisitor_TC02",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"name\": \"3($&#@*(\",\r\n \"phoneNumber\": \"13900008080\",\r\n \"emergencyContact\": \"3333\",\r\n \"emergencyPhone\": \"13900008080\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/update",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_UpdateVisitor_TC03",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.sendRequest({\r",
+							"    url: pm.globals.get(\"base\") + '/logout',\r",
+							"    method: 'POST'\r",
+							"}, function (err, res) {\r",
+							"    if (err) {\r",
+							"        console.log(error);\r",
+							"    }\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"name\": \"Homan\",\r\n \"phoneNumber\": \"13900008080\",\r\n \"emergencyContact\": \"蒋峰\",\r\n \"emergencyPhone\": \"13900009999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/update",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

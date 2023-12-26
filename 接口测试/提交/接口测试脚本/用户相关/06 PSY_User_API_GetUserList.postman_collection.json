@@ -1,0 +1,454 @@
+{
+	"info": {
+		"_postman_id": "b230db17-3f9e-4fcf-ac12-79dcba163998",
+		"name": "06 PSY_User_API_GetUserList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31702260"
+	},
+	"item": [
+		{
+			"name": "User_API_GetUserList_TC01",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetUserList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/user/list",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserList_TC02",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetUserList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(500);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Internal Server Error\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/list\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/user/list?size=-1",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserList_TC03",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetUserList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(500);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Internal Server Error\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/list\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/user/list?size=0",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserList_TC04",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetUserList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/user/list?size=1000000000",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "1000000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserList_TC05",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetUserList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(400);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Bad Request\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/list\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/user/list?size=abc",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "abc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserList_TC06",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetUserList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(500);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Internal Server Error\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/list\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/user/list?page=-1&size=10",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "-1"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserList_TC07",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetUserList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/user/list?page=0&size=10",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserList_TC08",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetUserList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.code).to.eql(0);\r",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/user/list?page=1000000000&size=10",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1000000000"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserList_TC09",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"GetUserList test\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(400);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Bad Request\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/list\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/user/list?page=abc&size=10",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "abc"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserList_TC10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(403);\r",
+							"    pm.expect(jsonData.error).to.eql(\"Forbidden\");\r",
+							"    pm.expect(jsonData.path).to.eql(\"/user/list\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/user/list",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

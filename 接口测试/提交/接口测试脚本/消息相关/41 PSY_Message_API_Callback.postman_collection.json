@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "3b1b4efe-8fe2-4429-ba29-1719a221ce0e",
+		"name": "PSY_Message_API_Callback",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26322411"
+	},
+	"item": [
+		{
+			"name": "PSY_Message_API_Callback_TC001",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CallbackCommand\": \"C2C.CallbackAfterSendMsg\", \r\n    \"From_Account\": \"jared\", \r\n    \"To_Account\": \"Jonh\", \r\n    \"MsgSeq\": 48374, \r\n    \"MsgRandom\": 2837546, \r\n    \"MsgTime\": 1557481126, \r\n    \"MsgKey\": \"48374_2837546_1557481126\", \r\n    \"OnlineOnlyFlag\": 1, \r\n    \"SendMsgResult\": 0, \r\n    \"ErrorInfo\": \"send msg succeed\", \r\n    \"UnreadMsgNum\": 7, \r\n    \"MsgBody\": [ \r\n        { \r\n    \"MsgType\": \"TIMTextElem\", \r\n    \"MsgContent\": { \r\n    \"Text\": \"red packet\" \r\n        } \r\n        } \r\n    ], \r\n    \"CloudCustomData\": \"your cloud custom data\"\r\n} \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/message/callback?\n SdkAppid=1400588833&CallbackCommand=C2C.CallbackAfterSendMsg&contentType=JSON&ClientI\n P=127.0.0.1&OptPlatform=RESTAPI",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"message",
+						"callback"
+					],
+					"query": [
+						{
+							"key": "\n SdkAppid",
+							"value": "1400588833"
+						},
+						{
+							"key": "CallbackCommand",
+							"value": "C2C.CallbackAfterSendMsg"
+						},
+						{
+							"key": "contentType",
+							"value": "JSON"
+						},
+						{
+							"key": "ClientI\n P",
+							"value": "127.0.0.1"
+						},
+						{
+							"key": "OptPlatform",
+							"value": "RESTAPI"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

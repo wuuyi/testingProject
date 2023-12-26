@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "ab442d59-5c04-4fd8-9834-81d92eb9dd18",
+		"name": "PSY_Conversation_API_Export",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26322411"
+	},
+	"item": [
+		{
+			"name": "PSY_Conversation_API_Export_TC001",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/export/ff8081818c5df531018c774647a000d6",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"export",
+						"ff8081818c5df531018c774647a000d6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Export_TC002",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/export/kk8081818c5df531018c774647a000d6",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"export",
+						"kk8081818c5df531018c774647a000d6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Export_TC003",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/export/",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"export",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Export_TC004",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/export/kk8081818c5df531018c774647a000d6",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"export",
+						"kk8081818c5df531018c774647a000d6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
