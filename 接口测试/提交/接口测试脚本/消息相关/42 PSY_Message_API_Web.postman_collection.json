@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "b38b9adc-e5b3-42fa-8601-dd272d7e435e",
+		"name": "PSY_Message_API_Web",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26322411"
+	},
+	"item": [
+		{
+			"name": "PSY_Message_API_Web_TC001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/message/conversation/web?conversationId=ff8081818c5df531018c7b9f2a810111",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"message",
+						"conversation",
+						"web"
+					],
+					"query": [
+						{
+							"key": "conversationId",
+							"value": "ff8081818c5df531018c7b9f2a810111"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Message_API_Web_TC002",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/message/conversation/web?conversationId=ff8081818c5df531018c7b9f2a810111&page=1&size=2",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"message",
+						"conversation",
+						"web"
+					],
+					"query": [
+						{
+							"key": "conversationId",
+							"value": "ff8081818c5df531018c7b9f2a810111"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Message_API_Web_TC003",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/message/conversation/web?conversationId=kk8081818c5df531018c7b9f2a810111",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"message",
+						"conversation",
+						"web"
+					],
+					"query": [
+						{
+							"key": "conversationId",
+							"value": "kk8081818c5df531018c7b9f2a810111"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Message_API_Web_TC004",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/message/conversation/web?conversationId=",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"message",
+						"conversation",
+						"web"
+					],
+					"query": [
+						{
+							"key": "conversationId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Message_API_Web_TC005",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/message/conversation/web?conversationId=ff8081818c5df531018c7b9f2a810111&page=-1&size=2",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"message",
+						"conversation",
+						"web"
+					],
+					"query": [
+						{
+							"key": "conversationId",
+							"value": "ff8081818c5df531018c7b9f2a810111"
+						},
+						{
+							"key": "page",
+							"value": "-1"
+						},
+						{
+							"key": "size",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Message_API_Web_TC006",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/message/conversation/web?conversationId=ff8081818c5df531018c7b9f2a810111&page=1.1&size=2",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"message",
+						"conversation",
+						"web"
+					],
+					"query": [
+						{
+							"key": "conversationId",
+							"value": "ff8081818c5df531018c7b9f2a810111"
+						},
+						{
+							"key": "page",
+							"value": "1.1"
+						},
+						{
+							"key": "size",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Message_API_Web_TC007",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/message/conversation/web?conversationId=ff8081818c5df531018c7b9f2a810111&page=1&size=-1",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"message",
+						"conversation",
+						"web"
+					],
+					"query": [
+						{
+							"key": "conversationId",
+							"value": "ff8081818c5df531018c7b9f2a810111"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Message_API_Web_TC008",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/message/conversation/web?conversationId=ff8081818c5df531018c7b9f2a810111&page=1&size=1.1",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"message",
+						"conversation",
+						"web"
+					],
+					"query": [
+						{
+							"key": "conversationId",
+							"value": "ff8081818c5df531018c7b9f2a810111"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "1.1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

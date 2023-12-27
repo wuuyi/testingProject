@@ -1,0 +1,460 @@
+{
+	"info": {
+		"_postman_id": "b5dcec16-bea6-4f93-9b30-0e94f45a302e",
+		"name": "03 PSY_User_API_Login_WX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31702260"
+	},
+	"item": [
+		{
+			"name": "User_API_Login_WX_TC01",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.sendRequest(pm.globals.get(\"test_base\") + '/code', function (err, res) {\r",
+							"    pm.environment.set(\"code\", res.json().code)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/auth/wx/{{appid}}/login?code={{code}}",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"wx",
+						"{{appid}}",
+						"login"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "{{code}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_WX_TC02",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/auth/wx/{{appid}}/login?code=001TGl000NdK1N1BjF200xYThh3TGl0X",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"wx",
+						"{{appid}}",
+						"login"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "001TGl000NdK1N1BjF200xYThh3TGl0X"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_WX_TC03",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/auth/wx/{{appid}}/login?code=faultycode",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"wx",
+						"{{appid}}",
+						"login"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "faultycode"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_WX_TC04",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/auth/wx/{{appid}}/login?code=",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"wx",
+						"{{appid}}",
+						"login"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_WX_TC05",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.sendRequest(pm.globals.get(\"test_base\") + '/code', function (err, res) {\r",
+							"    pm.environment.set(\"code\", res.json().code)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/auth/wx/wx3613a079e6a03344/login?code={{code}}",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"wx",
+						"wx3613a079e6a03344",
+						"login"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "{{code}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_WX_TC06",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/auth/wx/wx3613a079e6a03344/login?code=001TGl000NdK1N1BjF200xYThh3TGl0X",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"wx",
+						"wx3613a079e6a03344",
+						"login"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "001TGl000NdK1N1BjF200xYThh3TGl0X"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_WX_TC07",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/auth/wx/wx3613a079e6a03344/login?code=faultycode",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"wx",
+						"wx3613a079e6a03344",
+						"login"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "faultycode"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_WX_TC08",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/auth/wx/wx3613a079e6a03344/login?code=",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"wx",
+						"wx3613a079e6a03344",
+						"login"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_WX_TC09",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.sendRequest(pm.globals.get(\"test_base\") + '/code', function (err, res) {\r",
+							"    pm.environment.set(\"code\", res.json().code)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/auth/wx//login?code={{code}}",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"wx",
+						"",
+						"login"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "{{code}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_WX_TC10",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/auth/wx//login?code=001TGl000NdK1N1BjF200xYThh3TGl0X",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"wx",
+						"",
+						"login"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "001TGl000NdK1N1BjF200xYThh3TGl0X"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_WX_TC11",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/auth/wx//login?code=faultycode",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"wx",
+						"",
+						"login"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "faultycode"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_Login_WX_TC12",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/auth/wx//login?code=",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"auth",
+						"wx",
+						"",
+						"login"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
