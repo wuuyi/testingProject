@@ -87,7 +87,7 @@ public class PSYAdminAccountCounselorModifyTC extends BaseTest {
         counselorManagePage.clickModifyCounselor();
 
         counselorManagePage.enterName("")
-                .enterPhone("12311112222")
+                .enterPhone("12345678901")
                 .clickModifyConfirm();
         Thread.sleep(500);
         counselorManagePage.assertNameErr("请输入姓名")
@@ -104,7 +104,7 @@ public class PSYAdminAccountCounselorModifyTC extends BaseTest {
         counselorManagePage.clickModifyCounselor();
 
         counselorManagePage.enterName("一")
-                .enterPhone("188177123456")
+                .enterPhone("18120149879")
                 .clickModifyConfirm();
         Thread.sleep(500);
         counselorManagePage.assertNameErr("请检查姓名输入是否正确")
@@ -172,7 +172,7 @@ public class PSYAdminAccountCounselorModifyTC extends BaseTest {
         counselorManagePage.clickModifyCounselor();
 
         counselorManagePage.enterID("2110032001071643211")
-                .enterMail("a23.-bc@sample.com")
+                .enterMail("1337140734@com")
                 .clickModifyConfirm();
         Thread.sleep(500);
         counselorManagePage.assertIDErr("请检查格式后正确输入")

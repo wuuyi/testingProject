@@ -36,8 +36,8 @@ public class PSYAdminAccountSupervisorNewTC extends BaseTest {
         Thread.sleep(1000);
         supervisorManagePage.clickNewSupervisor()
                 .enterName("")
-                .enterPhone("12311112222")
-                .enterID("110101199003070089")
+                .enterPhone("12345678901")
+                .enterID("620102200306065828")
                 .enterMail("amy@163.com")
                 .enterSupTitle("中级咨询师")
                 .changeGrade(1)
@@ -60,7 +60,7 @@ public class PSYAdminAccountSupervisorNewTC extends BaseTest {
         Thread.sleep(1000);
         supervisorManagePage.clickNewSupervisor()
                 .enterName("一")
-                .enterPhone("188177123456")
+                .enterPhone("18120149879")
                 .enterID("");
         Thread.sleep(500);
         supervisorManagePage.assertNameErr("请检查姓名输入是否正确")
@@ -76,7 +76,7 @@ public class PSYAdminAccountSupervisorNewTC extends BaseTest {
         Thread.sleep(1000);
         supervisorManagePage.clickNewSupervisor()
                 .enterName("一二三四五六七八九十一二三四五六")
-                .enterPhone("1881881234")
+                .enterPhone("1812014987")
                 .enterID("");
         Thread.sleep(500);
         supervisorManagePage.assertNameErr("请检查姓名输入是否正确")
@@ -92,7 +92,7 @@ public class PSYAdminAccountSupervisorNewTC extends BaseTest {
         Thread.sleep(1000);
         supervisorManagePage.clickNewSupervisor()
                 .enterName("张zhang")
-                .enterPhone("13611818488")
+                .enterPhone("18120149879")
                 .enterID("210293199872637261")
                 .enterMail("");
         Thread.sleep(500);
@@ -109,7 +109,7 @@ public class PSYAdminAccountSupervisorNewTC extends BaseTest {
         Thread.sleep(1000);
         supervisorManagePage.clickNewSupervisor()
                 .enterName("张#123")
-                .enterPhone("13611818488")
+                .enterPhone("18120149879")
                 .enterID("21100320010815432")
                 .enterMail("");
         Thread.sleep(500);
@@ -126,9 +126,9 @@ public class PSYAdminAccountSupervisorNewTC extends BaseTest {
         Thread.sleep(1000);
         supervisorManagePage.clickNewSupervisor()
                 .enterName("张哥身份证邮箱")
-                .enterPhone("13611818488")
-                .enterID("2110032001071543212")
-                .enterMail("a23.-bc@sample.com")
+                .enterPhone("18120149879")
+                .enterID("620102203060658288")
+                .enterMail("1337140734@com")
                 .enterSupTitle("");
         Thread.sleep(500);
         supervisorManagePage.assertIDErr("请检查格式后正确输入")

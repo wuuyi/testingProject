@@ -84,7 +84,7 @@ public class PSYAdminAccountSupervisorModifyTC extends BaseTest {
         supervisorManagePage.clickModifySupervisor();
         String originUserName = supervisorManagePage.getUserName();
         supervisorManagePage.enterName("一")
-                .enterPhone("188177123456")
+                .enterPhone("18120149879")
                 .clickModifyConfirm();
         Thread.sleep(500);
         supervisorManagePage.assertNameErr("请检查姓名输入是否正确")
@@ -151,7 +151,7 @@ public class PSYAdminAccountSupervisorModifyTC extends BaseTest {
         Thread.sleep(1000);
         supervisorManagePage.clickModifySupervisor()
                 .enterID("2110032000071543211")
-                .enterMail("a23.-bc@sample.com")
+                .enterMail("1337140734@com")
                 .clickModifyConfirm();
         Thread.sleep(500);
         supervisorManagePage.assertIDErr("请检查格式后正确输入")
