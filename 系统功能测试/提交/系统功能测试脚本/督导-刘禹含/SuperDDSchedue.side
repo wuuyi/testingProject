@@ -1,0 +1,123 @@
+{
+  "id": "445d7cd1-8236-42fa-9d32-3078168b3756",
+  "version": "2.0",
+  "name": "Schedule_Constant",
+  "url": "https://sei-test.021hqit.com/group-6/#/working-schedule",
+  "tests": [{
+    "id": "b23d9699-2623-4f4b-9e2f-276d967d2210",
+    "name": "Untitled",
+    "commands": [{
+      "id": "9f2deebb-5ff0-4bda-9c3b-a4d08e30ba91",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/working-schedule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18b2e509-e7de-43b8-b42b-bfddf23bbf32",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dateItem:nth-child(17) > .watcher:nth-child(3)",
+      "targets": [
+        ["css=.dateItem:nth-child(17) > .watcher:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div[2]/div[2]/div[17]/span[3]", "xpath:idRelative"],
+        ["xpath=//div[17]/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d597f028-0566-453b-b785-a4268950bfb0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-row:nth-child(3)",
+      "targets": [
+        ["css=.el-row:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9792a2c0-bc94-4768-98fc-52359980a63b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.el-button--default:nth-child(2)",
+      "targets": [
+        ["css=.el-button--default:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div[2]/div/div[3]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'确 定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24622d36-c4b9-4fa6-aa08-c640156f0f94",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-select__input",
+      "targets": [
+        ["css=.el-select__input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div[2]/div/div[2]/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6a4223c-21ce-4355-8add-b783396913f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > span",
+      "targets": [
+        ["css=.hover > span", "css:finder"],
+        ["xpath=//div[4]/div/div/ul/li[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'123?!~（yosei_zxs6）')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c05e674-3795-42cc-a6c3-50ca0d1f602e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.scheduleAddModal",
+      "targets": [
+        ["css=.scheduleAddModal", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "035ab828-75f9-43b2-bbea-40fca8c367d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-button--default:nth-child(2)",
+      "targets": [
+        ["css=.el-button--default:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div[2]/div/div[3]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'确 定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4174963-4b02-4cf4-b209-55604395913a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.el-button--default:nth-child(2)",
+      "targets": [
+        ["css=.el-button--default:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div[2]/div/div[3]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'确 定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d5cc1e06-ad65-4088-8566-812f157470ce",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b23d9699-2623-4f4b-9e2f-276d967d2210"]
+  }],
+  "urls": ["https://sei-test.021hqit.com/", "https://sei-test.021hqit.com/group-6/#/working-schedule"],
+  "plugins": []
+}

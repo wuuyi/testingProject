@@ -1,0 +1,89 @@
+{
+  "id": "1c4d344e-9d7f-4926-bcb1-3dd11238b587",
+  "version": "2.0",
+  "name": "psy",
+  "url": "https://sei-test.021hqit.com/group-6/#/login",
+  "tests": [{
+    "id": "13e12abf-4ef3-46a8-b56c-7e13bbd2b31c",
+    "name": "Untitled",
+    "commands": [{
+      "id": "2e485655-9c7d-432e-856c-ed0c98b78365",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6af70cc-9cd3-41fb-ab2e-fd8c947c2f47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a90aac63-fbe1-415e-95d6-afe7c65bb9cc",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.is-error .el-input__inner",
+      "targets": [
+        ["css=.is-error .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sei_dd"
+    }, {
+      "id": "f5452431-a036-46f6-9a24-3aa34045515c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "720ca8c7-4b79-4dbd-8e84-43df91f4f173",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-form-item:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-form-item:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "pl,okm123"
+    }, {
+      "id": "a24ba0f5-1542-4ab2-9317-f3ce8bb5b16e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-button",
+      "targets": [
+        ["css=.el-button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bd2e7fe4-43bd-4cb8-aeb8-4dc5a4f2b457",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["13e12abf-4ef3-46a8-b56c-7e13bbd2b31c"]
+  }],
+  "urls": ["https://sei-test.021hqit.com/#/login", "https://sei-test.021hqit.com/group-6/#/login"],
+  "plugins": []
+}
