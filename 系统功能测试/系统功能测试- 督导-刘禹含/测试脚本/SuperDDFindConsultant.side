@@ -1,0 +1,71 @@
+{
+  "id": "b165fd00-1c5c-4310-a836-7456da7e8d70",
+  "version": "2.0",
+  "name": "Super_findConsultant",
+  "url": "https://sei-test.021hqit.com/group-6/#/counselor-management",
+  "tests": [{
+    "id": "f16c0271-9e3e-408a-9495-5c1f753001fc",
+    "name": "find_consultant",
+    "commands": [{
+      "id": "fcf5a7a1-cc37-4459-a273-6cbd7607ca03",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6#/counselor-management",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b81303b-a277-4364-a57c-90ee11141bc7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1096",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54668528-5a13-4aed-8914-d0d57c58574d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-input:nth-child(2) > .el-input__inner",
+      "targets": [
+        ["css=.el-input:nth-child(2) > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95ce24b3-789e-4849-bb96-f64fa30fffad",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-input:nth-child(2) > .el-input__inner",
+      "targets": [
+        ["css=.el-input:nth-child(2) > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ecnu_counse"
+    }, {
+      "id": "c79f16b8-5376-4ef8-8097-21ae2e68e446",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.el-input:nth-child(2) > .el-input__inner",
+      "targets": [
+        ["css=.el-input:nth-child(2) > .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[2]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "734911b7-fad1-4619-b01e-2c8f3e1eb2e2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f16c0271-9e3e-408a-9495-5c1f753001fc"]
+  }],
+  "urls": ["https://sei-test.021hqit.com/group-9/#/counselor-management", "https://sei-test.021hqit.com/group-6/#/counselor-management"],
+  "plugins": []
+}

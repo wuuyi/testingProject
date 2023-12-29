@@ -1,0 +1,119 @@
+{
+  "id": "3791791d-c32b-4892-9f44-a31cf39e6f40",
+  "version": "2.0",
+  "name": "SuperChange",
+  "url": "https://sei-test.021hqit.com/group-6/#/home",
+  "tests": [{
+    "id": "538f0a06-73eb-4343-b514-c8b01a7acb76",
+    "name": "Untitled",
+    "commands": [{
+      "id": "50559685-1c3e-4f1d-bd2c-1622b6cb7593",
+      "comment": "",
+      "command": "open",
+      "target": "https://sei-test.021hqit.com/group-6/#/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8fcd32c9-d8a6-41b4-90a2-3b1465d9e41e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "2064x1168",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a29f7fc-d3d4-447d-8a10-928f8e19467b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menuActionItem > span:nth-child(1)",
+      "targets": [
+        ["css=.menuActionItem > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='el-popover-415']/div/span", "xpath:idRelative"],
+        ["xpath=//body/div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'修改登录密码')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "968211d9-362f-4bd7-9c21-5bda589de04d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-row:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-row:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[3]/div/div[2]/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0877a04d-9288-4e1d-b0ef-fa2c908d8446",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-row:nth-child(1) .el-input__inner",
+      "targets": [
+        ["css=.el-row:nth-child(1) .el-input__inner", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[3]/div/div[2]/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pl,okm124"
+    }, {
+      "id": "70c7c0ae-93fe-4d67-a93e-ec8de124ebf6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-row:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-row:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[3]/div/div[2]/form/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "911f163e-e54e-4834-87a8-a05a8b9a5413",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-row:nth-child(2) .el-input__inner",
+      "targets": [
+        ["css=.el-row:nth-child(2) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[3]/div/div[2]/form/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "778d935a-1e12-45fb-8eda-ff313c5be7ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-row:nth-child(3) .el-input__inner",
+      "targets": [
+        ["css=.el-row:nth-child(3) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='password'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[3]/div/div[2]/form/div[3]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c89b84a-1040-4fa7-a3b7-93f2cd1508d2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.el-row:nth-child(3) .el-input__inner",
+      "targets": [
+        ["css=.el-row:nth-child(3) .el-input__inner", "css:finder"],
+        ["xpath=(//input[@type='password'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div[3]/div/div[2]/form/div[3]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3ae7e0aa-6359-484a-97fb-e71b7cb2cf94",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["538f0a06-73eb-4343-b514-c8b01a7acb76"]
+  }],
+  "urls": ["https://sei-test.021hqit.com/group-9/#/home", "https://sei-test.021hqit.com/group-6/#/home"],
+  "plugins": []
+}
