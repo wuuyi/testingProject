@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "e74cf44e-a057-4fda-870b-bfa8f34067cc",
+		"name": "PSY_Conversation_API_BatchExport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26322411"
+	},
+	"item": [
+		{
+			"name": "PSY_Conversation_API_BatchExport_TC001",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true,
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "text/plain;charset=UTF-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"ff8081818c5df531018c774647a000d6\", \r\n    \"ff8081818c5df531018c7618565b00a6\" \r\n] \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/batchexport",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"batchexport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_BatchExport_TC002",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"aa8081818c5df531018c774647a000d6\", \r\n    \"aa8081818c5df531018c7618565b00a6\" \r\n] \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/batchexport",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"batchexport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_BatchExport_TC003",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[] \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/batchexport",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"batchexport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_BatchExport_TC004",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[] \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/batchexport",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"batchexport"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

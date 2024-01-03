@@ -1,0 +1,638 @@
+{
+	"info": {
+		"_postman_id": "33580514-d91b-4d8d-af55-8dd332771eb0",
+		"name": "PSY_Conversation_API_Record",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26322411"
+	},
+	"item": [
+		{
+			"name": "PSY_Conversation_API_Record_TC001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC002",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC003",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC004",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC005",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist?visitorName=万",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					],
+					"query": [
+						{
+							"key": "visitorName",
+							"value": "万"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC006",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist?counselorName=咨询师二号",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					],
+					"query": [
+						{
+							"key": "counselorName",
+							"value": "咨询师二号"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC007",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist?startTime=xxxxx",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					],
+					"query": [
+						{
+							"key": "startTime",
+							"value": "xxxxx"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC008",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist?endTime=xxx",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					],
+					"query": [
+						{
+							"key": "endTime",
+							"value": "xxx"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC009",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"visitorName\":\"万\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist?property=bad123&direction=desc",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					],
+					"query": [
+						{
+							"key": "property",
+							"value": "bad123"
+						},
+						{
+							"key": "direction",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC010",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist?direction=descbad&property=level",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					],
+					"query": [
+						{
+							"key": "direction",
+							"value": "descbad"
+						},
+						{
+							"key": "property",
+							"value": "level"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC011",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"visitorName\":\"万\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC012",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"visitorName\":\"万\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist?page=1.1",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1.1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC013",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"visitorName\":\"万\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist?size=-1",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC014",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"visitorName\":\"万\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist?size=1.1",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "1.1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC015",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"visitorName\":\"万\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist?visitorName=哈哈",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					],
+					"query": [
+						{
+							"key": "visitorName",
+							"value": "哈哈"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC016",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"visitorName\":\"万\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist?counselorName=嘿嘿",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					],
+					"query": [
+						{
+							"key": "counselorName",
+							"value": "嘿嘿"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC017",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"visitorName\":\"万\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist?property=level&direction=asc",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					],
+					"query": [
+						{
+							"key": "property",
+							"value": "level"
+						},
+						{
+							"key": "direction",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSY_Conversation_API_Record_TC018",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"visitorName\":\"万\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sei-test.021hqit.com/group-6/liwa-api/conversation/consultlist?property=level&direction=desc",
+					"protocol": "https",
+					"host": [
+						"sei-test",
+						"021hqit",
+						"com"
+					],
+					"path": [
+						"group-6",
+						"liwa-api",
+						"conversation",
+						"consultlist"
+					],
+					"query": [
+						{
+							"key": "property",
+							"value": "level"
+						},
+						{
+							"key": "direction",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

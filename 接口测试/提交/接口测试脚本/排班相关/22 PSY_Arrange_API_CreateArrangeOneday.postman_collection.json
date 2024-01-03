@@ -1,0 +1,1996 @@
+{
+	"info": {
+		"_postman_id": "19745efb-f23f-41ff-a55b-89896161055b",
+		"name": "22 PSY_Arrange_API_CreateArrangeOneday",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31702260"
+	},
+	"item": [
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC01",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"\"\n  ],\n  \"type\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC02",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"\"\n  ],\n  \"type\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC03",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [type] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"ff8081818c5df531018c641b39fe0008\",\n    \"ff8081818c5df531018c8307eef4017c\",\n    \"ff8081818c5df531018c8173565f0178\"\n  ],\n  \"type\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC04",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.status).to.eql(500);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"ff8081818c5df531018c641b39fe0008\",\n    \"ff8081818c5df531018c8307eef4017c\",\n    \"ff8081818c5df531018c8173565f0178\"\n  ],\n  \"type\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC05",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.status).to.eql(500);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"ff8081818c5df531018c641b39fe0008\"\n  ],\n  \"type\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC06",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [type] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"ff8081818c5df531018c641b39fe0008\"\n  ],\n  \"type\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC07",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"123456\"\n  ],\n  \"type\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC08",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"123456\"\n  ],\n  \"type\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC09",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"ff8081818c5df531018c641b39fe0009\"\n  ],\n  \"type\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"ff8081818c5df531018c641b39fe0009\"\n  ],\n  \"type\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC11",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"ff8081817dcbc8c0017dd885771a01c?\"\n  ],\n  \"type\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC12",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"ff8081817dcbc8c0017dd885771a01c?\"\n  ],\n  \"type\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC13",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"????????????????????????????????\"\n  ],\n  \"type\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC14",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"????????????????????????????????\"\n  ],\n  \"type\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC15",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"123456\",\n    \"????????????????????????????????\"\n  ],\n  \"type\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC16",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"123456\",\n    \"????????????????????????????????\"\n  ],\n  \"type\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC17",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"123456\",\n    \"????????????????????????????????\",\n    \"ff8081818c5df531018c641b39fe0008\"\n  ],\n  \"type\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC18",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"123456\",\n    \"????????????????????????????????\",\n    \"ff8081818c5df531018c8173565f0178\"\n  ],\n  \"type\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC19",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"ff8081818c5df531018c641b39fe0008\",\n    \"ff8081818c5df531018c641b39fe0009\"\n  ],\n  \"type\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC20",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"ff8081818c5df531018c641b39fe0008\",\n    \"ff8081818c5df531018c641b39fe0009\"\n  ],\n  \"type\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC21",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"ff8081818c5df531018c641b39fe0008\",\n    \"ff8081818c5df531018c641b39fe0009\",\n    \"ff8081817dcbc8c0017dd885771a01c?\"\n  ],\n  \"type\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC22",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"ff8081818c5df531018c641b39fe0008\",\n    \"ff8081818c5df531018c641b39fe0009\",\n    \"ff8081817dcbc8c0017dd885771a01c?\"\n  ],\n  \"type\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC23",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"\"\n  ],\n  \"type\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC24",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"\"\n  ],\n  \"type\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC25",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.status).to.eql(500);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"ff8081818c5df531018c641b39fe0008\",\n    \"ff8081818c5df531018c8307eef4017c\",\n    \"ff8081818c5df531018c8173565f0178\"\n  ],\n  \"type\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC26",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [type] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"ff8081818c5df531018c641b39fe0008\",\n    \"ff8081818c5df531018c8307eef4017c\",\n    \"ff8081818c5df531018c8173565f0178\"\n  ],\n  \"type\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC27",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [type] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"ff8081818c5df531018c641b39fe0008\"\n  ],\n  \"type\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC28",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(0);",
+							"    pm.expect(jsonData.message).to.eql(\"OK\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"ff8081818c5df531018c8173565f0178\"\n  ],\n  \"type\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC29",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"123456\"\n  ],\n  \"type\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC30",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"123456\"\n  ],\n  \"type\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC31",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"fg8081817dcbc8c0017dd3f8782401c2\"\n  ],\n  \"type\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC32",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"fg8081817dcbc8c0017dd3f8782401c2\"\n  ],\n  \"type\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC33",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"ff8081817dcbc8c0017dd885771a01c?\"\n  ],\n  \"type\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC34",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"ff8081817dcbc8c0017dd885771a01c?\"\n  ],\n  \"type\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC35",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"????????????????????????????????\"\n  ],\n  \"type\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC36",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"????????????????????????????????\"\n  ],\n  \"type\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC37",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"123456\",\n    \"????????????????????????????????\"\n  ],\n  \"type\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC38",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"123456\",\n    \"????????????????????????????????\"\n  ],\n  \"type\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC39",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"123456\",\n    \"????????????????????????????????\",\n    \"ff8081818c5df531018c8173565f0178\"\n  ],\n  \"type\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC40",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"123456\",\n    \"????????????????????????????????\",\n    \"ff8081818c5df531018c8173565f0178\"\n  ],\n  \"type\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC41",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"fg8081817dcbc8c0017dd3f8782401c2\",\n    \"ff8081817dcbc8c0017dd885771a01c8\"\n  ],\n  \"type\": \"SUPERVISOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC42",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"fg8081817dcbc8c0017dd3f8782401c2\",\n    \"ff8081818c5df531018c8173565f0178\"\n  ],\n  \"type\": \"TEST\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC43",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"\",\n  \"users\": [\n    \"ff8081818c5df531018c8173565f0178\",\n    \"ff8081817dcbc8c0017dd885771a01c?\"\n  ],\n  \"type\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC44",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.test(\"Body matches string\", function () {",
+							"        pm.expect(jsonData.message).to.include(\"key [users] failed on checker\");",
+							"    });",
+							"    pm.expect(jsonData.result).to.eql(null);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"ff8081817dcbc8c0017dd3f8782401c2\",\n    \"ff8081817dcbc8c0017dd885771a01c?\"\n  ],\n  \"type\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrange_API_CreateArrangeOneday_TC45",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Test Pass\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.code).to.eql(-1);",
+							"    pm.expect(jsonData.message).to.eql(null);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timestamp\": \"1638288000000\",\n  \"users\": [\n    \"ff8081818c5df531018c8307eef4017c\"\n  ],\n  \"type\": \"COUNSELOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/arrange",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"arrange"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

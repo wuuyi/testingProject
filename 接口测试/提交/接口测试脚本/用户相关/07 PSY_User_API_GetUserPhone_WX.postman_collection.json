@@ -1,0 +1,1441 @@
+{
+	"info": {
+		"_postman_id": "c65be296-98c1-425b-b7a3-ec4b8858d35d",
+		"name": "07 PSY_User_API_GetUserPhone_WX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31702260"
+	},
+	"item": [
+		{
+			"name": "User_API_GetUserPhone_WX_TC01",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Test auxiliary server must be running in order to make following requests.\r",
+							"// Requests are at the bottom.\r",
+							"\r",
+							"// Async series, Reference: https://community.postman.com/t/async-operations/24314\r",
+							"\r",
+							"/**\r",
+							" * @private\r",
+							" * @description Internal function to run tasks in series\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" * @param {Number} currOperation\r",
+							" * @param {Array<Any>} results\r",
+							" */\r",
+							"function _series (tasks, cb, currOperation = 0, results = []) {\r",
+							"    // Bail-out condition\r",
+							"    if (currOperation === tasks.length) {\r",
+							"        return cb(null, results);\r",
+							"    }\r",
+							"\r",
+							"    if (typeof tasks[currOperation] !== 'function') {\r",
+							"        return cb(new Error('asyncSeries: Please provide a function'));\r",
+							"    }\r",
+							"\r",
+							"    tasks[currOperation]((err, res) => {\r",
+							"        if (err) {\r",
+							"            return cb(err);\r",
+							"        }\r",
+							"\r",
+							"        results.push(res);\r",
+							"\r",
+							"        // Recursively call the next task in series till we're done executing all the operations\r",
+							"        return _series(tasks, cb, currOperation + 1, results);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"/**\r",
+							" * @description asyncSeries to execute requests in a series format\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" */\r",
+							"function asyncSeries (tasks, cb = () => {}) {\r",
+							"    return _series(tasks, cb);\r",
+							"}\r",
+							"\r",
+							"// Get `code`, login, and get `encryptedData` & `iv`.\r",
+							"asyncSeries([\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/code',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"code\", res.json().code)\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"base\") + '/auth/wx/' + pm.environment.get(\"appid\") + '/login?code=' + pm.environment.get(\"code\"),\r",
+							"            method: 'POST'\r",
+							"        }, function (err, res) {\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/phone',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"            pm.environment.set(\"iv\", res.json().iv)\r",
+							"            cb(err, res);\r",
+							"    })\r",
+							"], (err, res) => {\r",
+							"    if (err) {\r",
+							"        console.log('Series operations resolved', err, res);\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"// Get `encryptedData` & `iv`.\r",
+							"// pm.sendRequest(pm.globals.get(\"test_base\") + '/phone', function (err, res) {\r",
+							"//     pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"//     pm.environment.set(\"iv\", res.json().iv)\r",
+							"// })"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"{{encryptedData}}\",\r\n    \"iv\": \"{{iv}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC02",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Test auxiliary server must be running in order to make following requests.\r",
+							"// Requests are at the bottom.\r",
+							"\r",
+							"// Async series, Reference: https://community.postman.com/t/async-operations/24314\r",
+							"\r",
+							"/**\r",
+							" * @private\r",
+							" * @description Internal function to run tasks in series\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" * @param {Number} currOperation\r",
+							" * @param {Array<Any>} results\r",
+							" */\r",
+							"function _series (tasks, cb, currOperation = 0, results = []) {\r",
+							"    // Bail-out condition\r",
+							"    if (currOperation === tasks.length) {\r",
+							"        return cb(null, results);\r",
+							"    }\r",
+							"\r",
+							"    if (typeof tasks[currOperation] !== 'function') {\r",
+							"        return cb(new Error('asyncSeries: Please provide a function'));\r",
+							"    }\r",
+							"\r",
+							"    tasks[currOperation]((err, res) => {\r",
+							"        if (err) {\r",
+							"            return cb(err);\r",
+							"        }\r",
+							"\r",
+							"        results.push(res);\r",
+							"\r",
+							"        // Recursively call the next task in series till we're done executing all the operations\r",
+							"        return _series(tasks, cb, currOperation + 1, results);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"/**\r",
+							" * @description asyncSeries to execute requests in a series format\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" */\r",
+							"function asyncSeries (tasks, cb = () => {}) {\r",
+							"    return _series(tasks, cb);\r",
+							"}\r",
+							"\r",
+							"// Get `code`, login, and get `encryptedData` & `iv`.\r",
+							"asyncSeries([\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/code',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"code\", res.json().code)\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"base\") + '/auth/wx/' + pm.environment.get(\"appid\") + '/login?code=' + pm.environment.get(\"code\"),\r",
+							"            method: 'POST'\r",
+							"        }, function (err, res) {\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/phone',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"            pm.environment.set(\"iv\", res.json().iv)\r",
+							"            cb(err, res);\r",
+							"    })\r",
+							"], (err, res) => {\r",
+							"    if (err) {\r",
+							"        console.log('Series operations resolved', err, res);\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"// Get `encryptedData` & `iv`.\r",
+							"// pm.sendRequest(pm.globals.get(\"test_base\") + '/phone', function (err, res) {\r",
+							"//     pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"//     pm.environment.set(\"iv\", res.json().iv)\r",
+							"// })"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"HIpcaDBi+QyQ4jQvvEFoVcm0rrPSvu68Y9rQwNkERIYr2UxzNkW0qf8lkZH+LOXu/wWm2QuyodwFeLcwoAZMTrwjt7xd7s2n3VGzkCFymrT/w/D0xLEwHcdH9+Th3rFm6Np06p4/avfao+WsUFUByLApX5D/h9mpZz6+0Wrj1YAeH687EnsWsCf2UuQ1R5NAFWF1q3RwLAvLWOv009AEuA==\",\r\n    \"iv\": \"{{iv}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC03",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Test auxiliary server must be running in order to make following requests.\r",
+							"// Requests are at the bottom.\r",
+							"\r",
+							"// Async series, Reference: https://community.postman.com/t/async-operations/24314\r",
+							"\r",
+							"/**\r",
+							" * @private\r",
+							" * @description Internal function to run tasks in series\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" * @param {Number} currOperation\r",
+							" * @param {Array<Any>} results\r",
+							" */\r",
+							"function _series (tasks, cb, currOperation = 0, results = []) {\r",
+							"    // Bail-out condition\r",
+							"    if (currOperation === tasks.length) {\r",
+							"        return cb(null, results);\r",
+							"    }\r",
+							"\r",
+							"    if (typeof tasks[currOperation] !== 'function') {\r",
+							"        return cb(new Error('asyncSeries: Please provide a function'));\r",
+							"    }\r",
+							"\r",
+							"    tasks[currOperation]((err, res) => {\r",
+							"        if (err) {\r",
+							"            return cb(err);\r",
+							"        }\r",
+							"\r",
+							"        results.push(res);\r",
+							"\r",
+							"        // Recursively call the next task in series till we're done executing all the operations\r",
+							"        return _series(tasks, cb, currOperation + 1, results);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"/**\r",
+							" * @description asyncSeries to execute requests in a series format\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" */\r",
+							"function asyncSeries (tasks, cb = () => {}) {\r",
+							"    return _series(tasks, cb);\r",
+							"}\r",
+							"\r",
+							"// Get `code`, login, and get `encryptedData` & `iv`.\r",
+							"asyncSeries([\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/code',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"code\", res.json().code)\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"base\") + '/auth/wx/' + pm.environment.get(\"appid\") + '/login?code=' + pm.environment.get(\"code\"),\r",
+							"            method: 'POST'\r",
+							"        }, function (err, res) {\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/phone',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"            pm.environment.set(\"iv\", res.json().iv)\r",
+							"            cb(err, res);\r",
+							"    })\r",
+							"], (err, res) => {\r",
+							"    if (err) {\r",
+							"        console.log('Series operations resolved', err, res);\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"// Get `encryptedData` & `iv`.\r",
+							"// pm.sendRequest(pm.globals.get(\"test_base\") + '/phone', function (err, res) {\r",
+							"//     pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"//     pm.environment.set(\"iv\", res.json().iv)\r",
+							"// })"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"fewfwefwegerwrrts\",\r\n    \"iv\": \"{{iv}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC04",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Test auxiliary server must be running in order to make following requests.\r",
+							"// Requests are at the bottom.\r",
+							"\r",
+							"// Async series, Reference: https://community.postman.com/t/async-operations/24314\r",
+							"\r",
+							"/**\r",
+							" * @private\r",
+							" * @description Internal function to run tasks in series\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" * @param {Number} currOperation\r",
+							" * @param {Array<Any>} results\r",
+							" */\r",
+							"function _series (tasks, cb, currOperation = 0, results = []) {\r",
+							"    // Bail-out condition\r",
+							"    if (currOperation === tasks.length) {\r",
+							"        return cb(null, results);\r",
+							"    }\r",
+							"\r",
+							"    if (typeof tasks[currOperation] !== 'function') {\r",
+							"        return cb(new Error('asyncSeries: Please provide a function'));\r",
+							"    }\r",
+							"\r",
+							"    tasks[currOperation]((err, res) => {\r",
+							"        if (err) {\r",
+							"            return cb(err);\r",
+							"        }\r",
+							"\r",
+							"        results.push(res);\r",
+							"\r",
+							"        // Recursively call the next task in series till we're done executing all the operations\r",
+							"        return _series(tasks, cb, currOperation + 1, results);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"/**\r",
+							" * @description asyncSeries to execute requests in a series format\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" */\r",
+							"function asyncSeries (tasks, cb = () => {}) {\r",
+							"    return _series(tasks, cb);\r",
+							"}\r",
+							"\r",
+							"// Get `code`, login, and get `encryptedData` & `iv`.\r",
+							"asyncSeries([\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/code',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"code\", res.json().code)\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"base\") + '/auth/wx/' + pm.environment.get(\"appid\") + '/login?code=' + pm.environment.get(\"code\"),\r",
+							"            method: 'POST'\r",
+							"        }, function (err, res) {\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/phone',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"            pm.environment.set(\"iv\", res.json().iv)\r",
+							"            cb(err, res);\r",
+							"    })\r",
+							"], (err, res) => {\r",
+							"    if (err) {\r",
+							"        console.log('Series operations resolved', err, res);\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"// Get `encryptedData` & `iv`.\r",
+							"// pm.sendRequest(pm.globals.get(\"test_base\") + '/phone', function (err, res) {\r",
+							"//     pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"//     pm.environment.set(\"iv\", res.json().iv)\r",
+							"// })"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"\",\r\n    \"iv\": \"{{iv}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC05",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Test auxiliary server must be running in order to make following requests.\r",
+							"// Requests are at the bottom.\r",
+							"\r",
+							"// Async series, Reference: https://community.postman.com/t/async-operations/24314\r",
+							"\r",
+							"/**\r",
+							" * @private\r",
+							" * @description Internal function to run tasks in series\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" * @param {Number} currOperation\r",
+							" * @param {Array<Any>} results\r",
+							" */\r",
+							"function _series (tasks, cb, currOperation = 0, results = []) {\r",
+							"    // Bail-out condition\r",
+							"    if (currOperation === tasks.length) {\r",
+							"        return cb(null, results);\r",
+							"    }\r",
+							"\r",
+							"    if (typeof tasks[currOperation] !== 'function') {\r",
+							"        return cb(new Error('asyncSeries: Please provide a function'));\r",
+							"    }\r",
+							"\r",
+							"    tasks[currOperation]((err, res) => {\r",
+							"        if (err) {\r",
+							"            return cb(err);\r",
+							"        }\r",
+							"\r",
+							"        results.push(res);\r",
+							"\r",
+							"        // Recursively call the next task in series till we're done executing all the operations\r",
+							"        return _series(tasks, cb, currOperation + 1, results);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"/**\r",
+							" * @description asyncSeries to execute requests in a series format\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" */\r",
+							"function asyncSeries (tasks, cb = () => {}) {\r",
+							"    return _series(tasks, cb);\r",
+							"}\r",
+							"\r",
+							"// Get `code`, login, and get `encryptedData` & `iv`.\r",
+							"asyncSeries([\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/code',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"code\", res.json().code)\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"base\") + '/auth/wx/' + pm.environment.get(\"appid\") + '/login?code=' + pm.environment.get(\"code\"),\r",
+							"            method: 'POST'\r",
+							"        }, function (err, res) {\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/phone',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"            pm.environment.set(\"iv\", res.json().iv)\r",
+							"            cb(err, res);\r",
+							"    })\r",
+							"], (err, res) => {\r",
+							"    if (err) {\r",
+							"        console.log('Series operations resolved', err, res);\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"// Get `encryptedData` & `iv`.\r",
+							"// pm.sendRequest(pm.globals.get(\"test_base\") + '/phone', function (err, res) {\r",
+							"//     pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"//     pm.environment.set(\"iv\", res.json().iv)\r",
+							"// })"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"{{encryptedData}}\",\r\n    \"iv\": \"bwNtBJ4R+s09WbhjVGrHDQ==\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC06",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"HIpcaDBi+QyQ4jQvvEFoVcm0rrPSvu68Y9rQwNkERIYr2UxzNkW0qf8lkZH+LOXu/wWm2QuyodwFeLcwoAZMTrwjt7xd7s2n3VGzkCFymrT/w/D0xLEwHcdH9+Th3rFm6Np06p4/avfao+WsUFUByLApX5D/h9mpZz6+0Wrj1YAeH687EnsWsCf2UuQ1R5NAFWF1q3RwLAvLWOv009AEuA==\",\r\n    \"iv\": \"bwNtBJ4R+s09WbhjVGrHDQ==\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC07",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"faultyEncryptedData\",\r\n    \"iv\": \"bwNtBJ4R+s09WbhjVGrHDQ==\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC08",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"\",\r\n    \"iv\": \"bwNtBJ4R+s09WbhjVGrHDQ==\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC09",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Test auxiliary server must be running in order to make following requests.\r",
+							"// Requests are at the bottom.\r",
+							"\r",
+							"// Async series, Reference: https://community.postman.com/t/async-operations/24314\r",
+							"\r",
+							"/**\r",
+							" * @private\r",
+							" * @description Internal function to run tasks in series\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" * @param {Number} currOperation\r",
+							" * @param {Array<Any>} results\r",
+							" */\r",
+							"function _series (tasks, cb, currOperation = 0, results = []) {\r",
+							"    // Bail-out condition\r",
+							"    if (currOperation === tasks.length) {\r",
+							"        return cb(null, results);\r",
+							"    }\r",
+							"\r",
+							"    if (typeof tasks[currOperation] !== 'function') {\r",
+							"        return cb(new Error('asyncSeries: Please provide a function'));\r",
+							"    }\r",
+							"\r",
+							"    tasks[currOperation]((err, res) => {\r",
+							"        if (err) {\r",
+							"            return cb(err);\r",
+							"        }\r",
+							"\r",
+							"        results.push(res);\r",
+							"\r",
+							"        // Recursively call the next task in series till we're done executing all the operations\r",
+							"        return _series(tasks, cb, currOperation + 1, results);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"/**\r",
+							" * @description asyncSeries to execute requests in a series format\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" */\r",
+							"function asyncSeries (tasks, cb = () => {}) {\r",
+							"    return _series(tasks, cb);\r",
+							"}\r",
+							"\r",
+							"// Get `code`, login, and get `encryptedData` & `iv`.\r",
+							"asyncSeries([\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/code',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"code\", res.json().code)\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"base\") + '/auth/wx/' + pm.environment.get(\"appid\") + '/login?code=' + pm.environment.get(\"code\"),\r",
+							"            method: 'POST'\r",
+							"        }, function (err, res) {\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/phone',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"            pm.environment.set(\"iv\", res.json().iv)\r",
+							"            cb(err, res);\r",
+							"    })\r",
+							"], (err, res) => {\r",
+							"    if (err) {\r",
+							"        console.log('Series operations resolved', err, res);\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"// Get `encryptedData` & `iv`.\r",
+							"// pm.sendRequest(pm.globals.get(\"test_base\") + '/phone', function (err, res) {\r",
+							"//     pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"//     pm.environment.set(\"iv\", res.json().iv)\r",
+							"// })"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"{{encryptedData}}\",\r\n    \"iv\": \"erfesdfger\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC10",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"HIpcaDBi+QyQ4jQvvEFoVcm0rrPSvu68Y9rQwNkERIYr2UxzNkW0qf8lkZH+LOXu/wWm2QuyodwFeLcwoAZMTrwjt7xd7s2n3VGzkCFymrT/w/D0xLEwHcdH9+Th3rFm6Np06p4/avfao+WsUFUByLApX5D/h9mpZz6+0Wrj1YAeH687EnsWsCf2UuQ1R5NAFWF1q3RwLAvLWOv009AEuA==\",\r\n    \"iv\": \"erfesdfger\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC11",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"faultyEncryptedData\",\r\n    \"iv\": \"erfesdfger\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC12",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"\",\r\n    \"iv\": \"erfesdfger\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC13",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Test auxiliary server must be running in order to make following requests.\r",
+							"// Requests are at the bottom.\r",
+							"\r",
+							"// Async series, Reference: https://community.postman.com/t/async-operations/24314\r",
+							"\r",
+							"/**\r",
+							" * @private\r",
+							" * @description Internal function to run tasks in series\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" * @param {Number} currOperation\r",
+							" * @param {Array<Any>} results\r",
+							" */\r",
+							"function _series (tasks, cb, currOperation = 0, results = []) {\r",
+							"    // Bail-out condition\r",
+							"    if (currOperation === tasks.length) {\r",
+							"        return cb(null, results);\r",
+							"    }\r",
+							"\r",
+							"    if (typeof tasks[currOperation] !== 'function') {\r",
+							"        return cb(new Error('asyncSeries: Please provide a function'));\r",
+							"    }\r",
+							"\r",
+							"    tasks[currOperation]((err, res) => {\r",
+							"        if (err) {\r",
+							"            return cb(err);\r",
+							"        }\r",
+							"\r",
+							"        results.push(res);\r",
+							"\r",
+							"        // Recursively call the next task in series till we're done executing all the operations\r",
+							"        return _series(tasks, cb, currOperation + 1, results);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"/**\r",
+							" * @description asyncSeries to execute requests in a series format\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" */\r",
+							"function asyncSeries (tasks, cb = () => {}) {\r",
+							"    return _series(tasks, cb);\r",
+							"}\r",
+							"\r",
+							"// Get `code`, login, and get `encryptedData` & `iv`.\r",
+							"asyncSeries([\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/code',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"code\", res.json().code)\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"base\") + '/auth/wx/' + pm.environment.get(\"appid\") + '/login?code=' + pm.environment.get(\"code\"),\r",
+							"            method: 'POST'\r",
+							"        }, function (err, res) {\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/phone',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"            pm.environment.set(\"iv\", res.json().iv)\r",
+							"            cb(err, res);\r",
+							"    })\r",
+							"], (err, res) => {\r",
+							"    if (err) {\r",
+							"        console.log('Series operations resolved', err, res);\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"// Get `encryptedData` & `iv`.\r",
+							"// pm.sendRequest(pm.globals.get(\"test_base\") + '/phone', function (err, res) {\r",
+							"//     pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"//     pm.environment.set(\"iv\", res.json().iv)\r",
+							"// })"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"{{encryptedData}}\",\r\n    \"iv\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC14",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"HIpcaDBi+QyQ4jQvvEFoVcm0rrPSvu68Y9rQwNkERIYr2UxzNkW0qf8lkZH+LOXu/wWm2QuyodwFeLcwoAZMTrwjt7xd7s2n3VGzkCFymrT/w/D0xLEwHcdH9+Th3rFm6Np06p4/avfao+WsUFUByLApX5D/h9mpZz6+0Wrj1YAeH687EnsWsCf2UuQ1R5NAFWF1q3RwLAvLWOv009AEuA==\",\r\n    \"iv\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC15",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"faultyEncryptedData\",\r\n    \"iv\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC16",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"\",\r\n    \"iv\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/{{appid}}/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"{{appid}}",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC17",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Test auxiliary server must be running in order to make following requests.\r",
+							"// Requests are at the bottom.\r",
+							"\r",
+							"// Async series, Reference: https://community.postman.com/t/async-operations/24314\r",
+							"\r",
+							"/**\r",
+							" * @private\r",
+							" * @description Internal function to run tasks in series\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" * @param {Number} currOperation\r",
+							" * @param {Array<Any>} results\r",
+							" */\r",
+							"function _series (tasks, cb, currOperation = 0, results = []) {\r",
+							"    // Bail-out condition\r",
+							"    if (currOperation === tasks.length) {\r",
+							"        return cb(null, results);\r",
+							"    }\r",
+							"\r",
+							"    if (typeof tasks[currOperation] !== 'function') {\r",
+							"        return cb(new Error('asyncSeries: Please provide a function'));\r",
+							"    }\r",
+							"\r",
+							"    tasks[currOperation]((err, res) => {\r",
+							"        if (err) {\r",
+							"            return cb(err);\r",
+							"        }\r",
+							"\r",
+							"        results.push(res);\r",
+							"\r",
+							"        // Recursively call the next task in series till we're done executing all the operations\r",
+							"        return _series(tasks, cb, currOperation + 1, results);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"/**\r",
+							" * @description asyncSeries to execute requests in a series format\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" */\r",
+							"function asyncSeries (tasks, cb = () => {}) {\r",
+							"    return _series(tasks, cb);\r",
+							"}\r",
+							"\r",
+							"// Get `code`, login, and get `encryptedData` & `iv`.\r",
+							"asyncSeries([\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/code',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"code\", res.json().code)\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"base\") + '/auth/wx/' + pm.environment.get(\"appid\") + '/login?code=' + pm.environment.get(\"code\"),\r",
+							"            method: 'POST'\r",
+							"        }, function (err, res) {\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/phone',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"            pm.environment.set(\"iv\", res.json().iv)\r",
+							"            cb(err, res);\r",
+							"    })\r",
+							"], (err, res) => {\r",
+							"    if (err) {\r",
+							"        console.log('Series operations resolved', err, res);\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"// Get `encryptedData` & `iv`.\r",
+							"// pm.sendRequest(pm.globals.get(\"test_base\") + '/phone', function (err, res) {\r",
+							"//     pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"//     pm.environment.set(\"iv\", res.json().iv)\r",
+							"// })"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"{{encryptedData}}\",\r\n    \"iv\": \"{{iv}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user//phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_API_GetUserPhone_WX_TC18",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Test auxiliary server must be running in order to make following requests.\r",
+							"// Requests are at the bottom.\r",
+							"\r",
+							"// Async series, Reference: https://community.postman.com/t/async-operations/24314\r",
+							"\r",
+							"/**\r",
+							" * @private\r",
+							" * @description Internal function to run tasks in series\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" * @param {Number} currOperation\r",
+							" * @param {Array<Any>} results\r",
+							" */\r",
+							"function _series (tasks, cb, currOperation = 0, results = []) {\r",
+							"    // Bail-out condition\r",
+							"    if (currOperation === tasks.length) {\r",
+							"        return cb(null, results);\r",
+							"    }\r",
+							"\r",
+							"    if (typeof tasks[currOperation] !== 'function') {\r",
+							"        return cb(new Error('asyncSeries: Please provide a function'));\r",
+							"    }\r",
+							"\r",
+							"    tasks[currOperation]((err, res) => {\r",
+							"        if (err) {\r",
+							"            return cb(err);\r",
+							"        }\r",
+							"\r",
+							"        results.push(res);\r",
+							"\r",
+							"        // Recursively call the next task in series till we're done executing all the operations\r",
+							"        return _series(tasks, cb, currOperation + 1, results);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"/**\r",
+							" * @description asyncSeries to execute requests in a series format\r",
+							" * \r",
+							" * @param {Array<Function>} tasks\r",
+							" * @param {Function} cb\r",
+							" */\r",
+							"function asyncSeries (tasks, cb = () => {}) {\r",
+							"    return _series(tasks, cb);\r",
+							"}\r",
+							"\r",
+							"// Get `code`, login, and get `encryptedData` & `iv`.\r",
+							"asyncSeries([\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/code',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"code\", res.json().code)\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"base\") + '/auth/wx/' + pm.environment.get(\"appid\") + '/login?code=' + pm.environment.get(\"code\"),\r",
+							"            method: 'POST'\r",
+							"        }, function (err, res) {\r",
+							"            cb(err, res);\r",
+							"    }),\r",
+							"    (cb) => pm.sendRequest({\r",
+							"            url: pm.globals.get(\"test_base\") + '/phone',\r",
+							"            method: 'GET'\r",
+							"        }, function (err, res) {\r",
+							"            pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"            pm.environment.set(\"iv\", res.json().iv)\r",
+							"            cb(err, res);\r",
+							"    })\r",
+							"], (err, res) => {\r",
+							"    if (err) {\r",
+							"        console.log('Series operations resolved', err, res);\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"// Get `encryptedData` & `iv`.\r",
+							"// pm.sendRequest(pm.globals.get(\"test_base\") + '/phone', function (err, res) {\r",
+							"//     pm.environment.set(\"encryptedData\", res.json().encryptedData)\r",
+							"//     pm.environment.set(\"iv\", res.json().iv)\r",
+							"// })"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encryptedData\": \"{{encryptedData}}\",\r\n    \"iv\": \"{{iv}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/wx/user/dsfwefwefwe/phone",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"wx",
+						"user",
+						"dsfwefwefwe",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
